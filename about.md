@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### About this guy...
 
-### More Information
+Thompson Lee is a light-hearted game developer that strives for creating fun games. Eventually.
 
-A place to include any other types of information that you'd like to include about yourself. 
+Prolific in Java and C++, he has created a replica of Pokémon game with a simple level editor, a tilt-and-roll Android game, and a minimalistic real-time strategy game.
 
-### Contact me
+He currently studies in Interactive Media and Game Development at Worcester Polytechnic Institute.
 
-[email@domain.com](mailto:email@domain.com)
+### Contact Info
+
+[tom.mai78101@gmail.com](mailto:tom.mai78101@gmail.com)
