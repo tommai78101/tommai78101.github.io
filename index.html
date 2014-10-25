@@ -12,12 +12,6 @@ layout: default
         {{ post.content | truncatewords:40}}
       </div>
 
-      <div>
-      	<script>
-      		document.write("{{ page.title }}");
-      	</script>
-      </div>
-      
       <a href="{{ site.baseurl }}{{ post.url}}" class="read-more">Read More</a>
     </article>
   {% endfor %}
