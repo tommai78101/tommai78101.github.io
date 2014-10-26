@@ -8,7 +8,7 @@ layout: default
   {% for post in site.posts %}
     <article class="post">    
       
-      <h3><a href="{{ site.baseurl }}/{{ site.blogs }}{{ post.title }}">{{ post.title }}</a></h3>
+      <h3><a href="{{ site.baseurl }}/{{ site.blogs }}{{ post.url }}">{{ post.title }}</a></h3>
 
       <div class="entry">
         {{ post.content }}
