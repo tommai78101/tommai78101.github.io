@@ -51,6 +51,7 @@ baseurl: ""
 
 markdown: kramdown
 highlighter: pygments
+lsi: false
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
