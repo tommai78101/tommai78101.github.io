@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First Blog Post!"
+title: First Blog Post!
 published: true
 ---
 
@@ -12,4 +12,4 @@ As I continue, I will probably add a few screenshots and GIFs to keep track of w
 
 Where can I find all of these emoticons? If I know some of them, I'll be updating this blog and will get the info posted below. :point_down:
 
-Other than that, all handy formatting are similar to Github Markdowns, so I should be set.
+Other than that, all handy formatting are similar to Github Markdowns, so I should be set
