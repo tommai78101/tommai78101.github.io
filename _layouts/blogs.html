@@ -10,10 +10,10 @@ layout: default
   {% for post in site.posts %}
     <article class="post">    
       
-      <h3><a href="{{ site.baseurl }}/{{ site.blogs }}{{ post.title }}">{{ post.title }}</a></h3>
+		<h3><a href="{{ site.baseurl }}/{{ site.blogs }}{{ post.title }}">{{ post.title }}</a></h3>
+		{{ post.content }}
 
-      
-
+      <!--  This is used for counting the word size, and truncating it if it exceeds 120 words.
       {% assign wordCount = {{ post.content | size }} %}
       {% if wordCount > 120 %}
       	<div class="entry">
@@ -21,10 +21,7 @@ layout: default
       	</div>
 
       	<a href="{{ site.baseurl }}{{ post.url}}" class="read-more">Read More</a>
-      {% elsif %}
-      	{{ post.content }}
-      {% endif %}
-      
+      {% elsif %} {% endif %} -->
     </article>
   {% endfor %}
 </div>
