@@ -9,14 +9,23 @@ layout: default
 <div class="blogs">
   {% for post in site.posts %}
     <article class="post">    
-      
       <h3><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h3>
 
-      <div class="entry">
-        {{ post.content | size }}
-      </div>
-
-      <a href="{{ site.baseurl }}/{{ post.url }}" class="back-to-top">Back to Top</a>
+      {% assign wordCount = {{ post.content | size }} %}
+      {% if wordCount > 120 %}
+        <div class="entry">
+          {{ post.content | truncatewords: 40 }}
+        </div>
+        <div class="small-navigation">
+          <a href="{{ site.baseurl }}/{{ post.url }}" class="read-more">Read More</a>
+          <a href="{{ site.baseurl }}/{{ site.blogs }}" class="read-more">Back to Top</a>
+        </div>
+      {% elsif %}
+        <div class="entry">
+          {{ post.content }}
+        </div>
+        <a href="{{ site.baseurl }}/{{ site.blogs }}" class="back-to-top">Back to Top</a>
+      {% endif %}
     </article>
   {% endfor %}
 </div>
