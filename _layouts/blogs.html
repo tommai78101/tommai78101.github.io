@@ -11,6 +11,10 @@ layout: default
     <article class="post">    
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 
+      <div class="date">
+        Written on {{ post.date | date: "%B %e, %Y" }}
+      </div>
+
       {% assign wordCount = {{ post.content | size }} %}
       {% if wordCount > 120 %}
         <div class="entry">
