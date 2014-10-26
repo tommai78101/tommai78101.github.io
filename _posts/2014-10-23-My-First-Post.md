@@ -2,7 +2,6 @@
 layout: post
 title: "First Blog Post!"
 published: true
-permalink: /{{ post.title }}
 ---
 
 I'm happy with how this is turning out, as I'm just starting out with blogging. In order for me to venture on and make updates, I need some sort of a blog to keep relevant info and knowledge around.
