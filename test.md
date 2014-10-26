@@ -1,6 +1,5 @@
 ---
-layout: page
-title: Test Bed for Test Posts
+layout: test
 permalink: /test/
 ---
 
