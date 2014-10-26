@@ -10,13 +10,13 @@ layout: default
   {% for post in site.posts %}
     <article class="post">    
       
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h3><a href="{{ site.baseurl }}/{{ site.blogs }}{{ post.title }}">{{ post.title }}</a></h3>
 
       <div class="entry">
-        {{ post.content | truncatewords:50}}
+        {{ post.content | truncatewords:60}}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url}}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}/{{ site.blogs }}{{ post.title }}" class="back-to-top">Back to Top</a>
     </article>
   {% endfor %}
 </div>
