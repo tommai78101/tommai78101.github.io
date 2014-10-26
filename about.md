@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
+title: About this guy...
 permalink: /about/
 ---
-
-### About this guy...
 
 Thompson Lee is a light-hearted game developer that strives for creating fun games. Eventually.
 
