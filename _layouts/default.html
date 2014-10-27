@@ -22,7 +22,7 @@
 
   <body>
     <div class="wrapper-masthead">
-      <div class="container" id="container-with-clearfix">
+      <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
           
@@ -43,20 +43,9 @@
       </div>
     </div>
 
-    <div class="mainContainer" id="content-pane">
-      <div class="sidebar" id="sidebar-content-pane">
-        <p>TESTING COLUMN</p>
-        <p>TESTING COLUMN 2</p>
-        <p>TESTING COLUMN 3</p>
-      </div>
-      
-      <div id="main" role="main" class="container">
-        <div class="main-content" id="main-content-pane">
-          {{ content }}
-        </div>
-      </div>
+    <div id="main" role="main" class="container">
+      {{ content }}
     </div>
-    
 
     <div class="wrapper-footer">
       <div class="container">

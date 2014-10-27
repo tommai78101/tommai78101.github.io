@@ -23,28 +23,11 @@ body {
   color: $darkGray;
 }
 
-.mainContainer#content-pane {
-  display: inline-block;
-  width: 100%;
-  zoom: 1;
-}
-
-.sidebar#sidebar-content-pane {
-  float: left;
-  width: 160px;
-}
-
-#main.container {
-  margin: 160px auto;
+.container {
+  margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-}
-
-.main-content#main-content-pane {
-  display: inline-block;
-  width: 100%;
-  zoom: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
