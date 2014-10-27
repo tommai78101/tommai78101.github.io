@@ -273,9 +273,18 @@ nav {
   background-color: $lightGray;
 }
 
+//footer
+
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+.footer_note p{
+  display: inline-block;
+  font-size: 14px;
+  color: #555555;
+  padding: 0 20px 0 20px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
