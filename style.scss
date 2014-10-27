@@ -23,25 +23,25 @@ body {
   color: $darkGray;
 }
 
-.mainContainer {
+.mainContainer#content-pane {
   display: inline-block;
   width: 100%;
   zoom: 1;
 }
 
-.sidebar {
+.sidebar#sidebar-content-pane {
   float: left;
   width: 160px;
 }
 
-.container {
+#main.container {
   margin: 160px auto;
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
 
-.main-content {
+.main-content#main-content-pane {
   display: inline-block;
   width: 100%;
   zoom: 1;
