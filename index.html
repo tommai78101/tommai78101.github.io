@@ -2,13 +2,42 @@
 layout: default
 ---
 
-<div class="left_side">
-  <p>LEFT</p>
-  <p>LEFT 2</p>
-  <p>LEFT 3</p>
+<!-- 
+
+What I'm going to do, is to practice HTML5, CSS3, and then migrate to Sass.
+
+This is to improve my web designing skills as well as create a good-looking one-shot portfolio.
+
+-->
+
+<div class="section_title">
+  <h1>Latest Blogs</h1>
 </div>
-<div class="right_side">
-  <p>RIGHT</p>
-  <p>RIGHT 2</p>
-  <p>RIGHT 3</p>
+
+<div class="blogs">
+  {% for post in site.posts %}
+    <article class="post">    
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+
+      <div class="date">
+        Written on {{ post.date | date: "%B %e, %Y" }}
+      </div>
+
+      {% assign wordCount = {{ post.content | size }} %}
+      {% if wordCount > 120 %}
+        <div class="entry">
+          {{ post.content | truncatewords: 40 }}
+        </div>
+        <div class="small-navigation">
+          <a href="{{ post.url }}" class="read-more">Read More</a>
+          <a href="{{ site.baseurl }}/{{ site.blogs }}" class="read-more">Back to Top</a>
+        </div>
+      {% else %}
+        <div class="entry">
+          {{ post.content }}
+        </div>
+        <a href="{{ site.baseurl }}/{{ site.blogs }}" class="back-to-top">Back to Top</a>
+      {% endif %}
+    </article>
+  {% endfor %}
 </div>
