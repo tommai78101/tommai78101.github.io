@@ -23,11 +23,28 @@ body {
   color: $darkGray;
 }
 
+.mainContainer {
+  display: inline-block;
+  width: 100%;
+  zoom: 1;
+}
+
+.sidebar {
+  float: left;
+  width: 160px;
+}
+
 .container {
-  margin: 0 auto;
+  margin: 160px auto;
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+}
+
+.main-content {
+  display: inline-block;
+  width: 100%;
+  zoom: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
