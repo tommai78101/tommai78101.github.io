@@ -28,7 +28,6 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-  display: table;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -295,6 +294,10 @@ footer {
 
 
 //-------------    customization     ------------------
+
+.main_table {
+  display: table;
+}
 
 .main_row {
   display: table-row;  

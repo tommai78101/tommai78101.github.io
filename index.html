@@ -14,41 +14,43 @@ This is to improve my web designing skills as well as create a good-looking one-
   <h1>Latest Blogs</h1>
 </div>
 
-<div class="main_row">
-  <div class="sidebar">
-    <p>TESTING COLUMN 1</p>
-    <p>TESTING COLUMN 2</p>
-    <p>TESTING COLUMN 3</p>
-    <p>TESTING COLUMN 4</p>
-  </div>
-  
-  <div class="blogs">
-    {% for post in site.posts %}
-      <article class="post">    
-        <div class="title">
-          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        </div>
+<div class="main_table">
+  <div class="main_row">
+    <div class="sidebar">
+      <p>TESTING COLUMN 1</p>
+      <p>TESTING COLUMN 2</p>
+      <p>TESTING COLUMN 3</p>
+      <p>TESTING COLUMN 4</p>
+    </div>
+    
+    <div class="blogs">
+      {% for post in site.posts %}
+        <article class="post">    
+          <div class="title">
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          </div>
 
-        <div class="date">
-          Written on {{ post.date | date: "%B %e, %Y" }}
-        </div>
+          <div class="date">
+            Written on {{ post.date | date: "%B %e, %Y" }}
+          </div>
 
-        {% assign wordCount = {{ post.content | size }} %}
-        {% if wordCount > 120 %}
-          <div class="entry">
-            {{ post.content | truncateWords: 120 }}
-          </div>
-          <div class="small-navigation">
-            <a href="{{ post.url }}" class="read-more">Read More</a>
-            <a href="{{ site.baseurl }}/{{ site.blogs }}" class="read-more">Back to Top</a>
-          </div>
-        {% else %}
-          <div class="entry">
-            {{ post.content }}
-          </div>
-          <a href="{{ site.baseurl }}/{{ site.blogs }}" class="back-to-top">Back to Top</a>
-        {% endif %}
-      </article>
-    {% endfor %}
+          {% assign wordCount = {{ post.content | size }} %}
+          {% if wordCount > 120 %}
+            <div class="entry">
+              {{ post.content | truncateWords: 120 }}
+            </div>
+            <div class="small-navigation">
+              <a href="{{ post.url }}" class="read-more">Read More</a>
+              <a href="{{ site.baseurl }}/{{ site.blogs }}" class="read-more">Back to Top</a>
+            </div>
+          {% else %}
+            <div class="entry">
+              {{ post.content }}
+            </div>
+            <a href="{{ site.baseurl }}/{{ site.blogs }}" class="back-to-top">Back to Top</a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
   </div>
 </div>
