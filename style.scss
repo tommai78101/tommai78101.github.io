@@ -300,11 +300,15 @@ footer {
   display: table-row;  
 }
 
-.section_title, .blogs {
+.sidebar, .blogs {
 //left and middle
   display: table-cell;
 }
 
+.sidebar p {
+  margin: 0 auto;
+  padding: 0 auto;
+}
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

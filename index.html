@@ -10,15 +10,24 @@ This is to improve my web designing skills as well as create a good-looking one-
 
 -->
 
-<div class="main_row">
-  <div class="section_title">
-    <h1>Latest Blogs</h1>
-  </div>
+<div class="section_title">
+  <h1>Latest Blogs</h1>
+</div>
 
+<div class="main_row">
+  <div class="sidebar">
+    <p>TESTING COLUMN 1</p>
+    <p>TESTING COLUMN 2</p>
+    <p>TESTING COLUMN 3</p>
+    <p>TESTING COLUMN 4</p>
+  </div>
+  
   <div class="blogs">
     {% for post in site.posts %}
       <article class="post">    
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <div class="title">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        </div>
 
         <div class="date">
           Written on {{ post.date | date: "%B %e, %Y" }}
@@ -27,7 +36,7 @@ This is to improve my web designing skills as well as create a good-looking one-
         {% assign wordCount = {{ post.content | size }} %}
         {% if wordCount > 120 %}
           <div class="entry">
-            {{ post.content | truncatewords: 40 }}
+            {{ post.content | truncateWords: 120 }}
           </div>
           <div class="small-navigation">
             <a href="{{ post.url }}" class="read-more">Read More</a>
