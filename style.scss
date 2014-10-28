@@ -28,6 +28,7 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  display: table;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -291,6 +292,20 @@ footer {
   padding: 0 4px 0 4px;
   margin: 0 0 0 0;
 }
+
+
+//-------------    customization     ------------------
+
+.main_row {
+  display: table-row;  
+}
+
+.section_title, .blogs {
+//left and middle
+  display: table-cell;
+}
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
