@@ -22,7 +22,7 @@ This is to improve my web designing skills as well as create a good-looking one-
     <div class="blogs">
 
       <div class="section_title">
-        <h2>Latest Blogs</h2>
+        <h2 id="section_header2">Latest Blogs</h2>
       </div>
 
       {% for post in site.posts %}
@@ -32,7 +32,7 @@ This is to improve my web designing skills as well as create a good-looking one-
           </div>
 
           <div class="date">
-            <h4>Written on {{ post.date | date: "%B %e, %Y" }}</h4>
+            <h4 class="custom_h4">Written on {{ post.date | date: "%B %e, %Y" }}</h4>
           </div>
 
           {% assign wordCount = {{ post.content | size }} %}
@@ -49,6 +49,7 @@ This is to improve my web designing skills as well as create a good-looking one-
               {{ post.content }}
             </div>
             <a href="{{ site.baseurl }}/{{ site.blogs }}" class="back-to-top">Back to Top</a>
+            <hr class="custom_hr">
           {% endif %}
         </article>
       {% endfor %}

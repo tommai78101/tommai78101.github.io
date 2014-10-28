@@ -317,6 +317,7 @@ footer {
   margin: 0 auto;
   padding: 0 auto;
   width: 160px;
+  font-size: 12px;
 }
 
 .blog div {
@@ -329,7 +330,19 @@ footer {
 }
 
 .section_title {
-  margin-left: 30px;
+  margin-left: 0px;
+}
+
+.custom_h4 {
+  font-size: 14px;
+}
+
+.custom_hr {
+  display: block;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  color: #CECECE;
 }
 
 
