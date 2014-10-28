@@ -10,10 +10,6 @@ This is to improve my web designing skills as well as create a good-looking one-
 
 -->
 
-<div class="section_title">
-  <h1>Latest Blogs</h1>
-</div>
-
 <div class="main_table">
   <div class="main_row">
     <div class="sidebar">
@@ -24,6 +20,11 @@ This is to improve my web designing skills as well as create a good-looking one-
     </div>
     
     <div class="blogs">
+
+      <div class="section_title">
+        <h2>Latest Blogs</h2>
+      </div>
+
       {% for post in site.posts %}
         <article class="post blog_content">    
           <div class="title">
@@ -31,7 +32,7 @@ This is to improve my web designing skills as well as create a good-looking one-
           </div>
 
           <div class="date">
-            Written on {{ post.date | date: "%B %e, %Y" }}
+            <h4>Written on {{ post.date | date: "%B %e, %Y" }}</h4>
           </div>
 
           {% assign wordCount = {{ post.content | size }} %}
