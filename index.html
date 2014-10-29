@@ -14,7 +14,14 @@ This is to improve my web designing skills as well as create a good-looking one-
   <div class="main_row">
     <div class="sidebar">
       {% for post in site.posts %}
-        <p><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%B %e, %Y" }}</a></p>
+        {% capture currentYear %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% if currentYear != year %}
+          {% unless forloop.first %}</ul>{% endunless %}
+          <h6>{{ currentYear }}</h6>
+          <ul>
+          {% capture year %}{{ currentYear }}{% endcapture %}
+        {% endif %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </div>
     
