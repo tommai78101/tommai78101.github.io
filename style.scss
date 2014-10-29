@@ -305,21 +305,24 @@ footer {
 // This is where all CSS customizations are placed for adding stylized layouts.
 
 .main_table {
-  display: table;
+  display: inline-block;
 }
 
 .main_row {
-  display: table-row;  
+  display: inline-block;  
 }
 
 .sidebar, .blogs {
 //left and middle
-  display: table-cell;
+  display: inline-block;
+}
+
+.blogs {
+  width: 75%;
 }
 
 .sidebar {
   width: 25%;
-  min-width: 25%;
   color: #000000;
   // background-color: #c8f0fe;
   border-right: solid 2px #CECECE;
