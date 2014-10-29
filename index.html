@@ -43,23 +43,25 @@ This is to improve my web designing skills as well as create a good-looking one-
           </div>
 
           {% assign wordCount = {{ post.content | size }} %}
-          {% if wordCount > 120 %}
+          {% if wordCount > 40 %}
             <div class="entry">
-              {{ post.content | truncateWords: 120 }}
+              {{ post.content | truncateWords: 40 }}
             </div>
             <div class="small-navigation">
               <a href="{{ post.url }}" class="read-more">Read More</a>
-              <a href="{{ site.baseurl }}/{{ site.blogs }}" class="read-more">Back to Top</a>
+              <nav>
+                <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
+              </nav>
             </div>
           {% else %}
             <div class="entry">
               {{ post.content }}
             </div>
             <nav>
-              <a href="{{ site.baseurl }}/{{ site.blogs }}" class="back-to-top">Back to Top</a>
+              <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
             </nav>
-            <hr class="custom_hr">
           {% endif %}
+          <hr class="custom_hr">
         </article>
       {% endfor %}
     </div>
