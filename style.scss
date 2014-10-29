@@ -313,8 +313,12 @@ footer {
 .sidebar {
   width: 200px;
   color: #000000;
-  background-color: #D3D3D3;
+  background-color: #B3E5CD;
   font-size: 10px;
+}
+
+.sidebar a {
+  color: #25BE75
 }
 
 .sidebar p {
@@ -336,6 +340,10 @@ footer {
 
 .blog_content div.title h3 {
   margin: 0 0 0 0;
+}
+
+.blog_content div.title a {
+  color: #25BE75
 }
 
 //  margin:  top, right, bottom, left
