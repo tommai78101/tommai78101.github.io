@@ -285,11 +285,15 @@ footer {
   border-top: 2px solid #000000;
 }
 
+.footer_note a {
+  color: #F07538
+}
+
 .footer_note p {
   display: inline-block;
   font-size: 14px;
   color: #555555;
-  padding: 0 4px 0 4px;
+  padding: 0 8px 0 8px;
   margin: 0 0 0 0;
 }
 
@@ -313,12 +317,12 @@ footer {
 .sidebar {
   width: 200px;
   color: #000000;
-  background-color: #CDEEE0;
+  background-color: #D2C9C5;
   font-size: 10px;
 }
 
 .sidebar a {
-  color: #25BE75
+  color: #1957B5
 }
 
 .sidebar p {
@@ -343,7 +347,7 @@ footer {
 }
 
 .blog_content div.title a {
-  color: #25BE75
+  color: #1957B5
 }
 
 //  margin:  top, right, bottom, left
