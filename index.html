@@ -17,8 +17,8 @@ This is to improve my web designing skills as well as create a good-looking one-
         {% capture currentYear %}{{ post.date | date: "%Y" }}{% endcapture %}
         {% if currentYear != year %}
           {% unless forloop.first %}</ul>{% endunless %}
-          <h6>{{ currentYear }}</h6>
-          <ul>
+          <h6 class="custom_h6">{{ currentYear }}</h6>
+          <ul class="custom_unordered_list">
           {% capture year %}{{ currentYear }}{% endcapture %}
         {% endif %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>

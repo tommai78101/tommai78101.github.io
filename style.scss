@@ -295,6 +295,7 @@ footer {
 
 
 //-------------    customization     ------------------
+// This is where all CSS customizations are placed for adding stylized layouts.
 
 .main_table {
   display: table;
@@ -345,6 +346,10 @@ footer {
   margin: 0 0 15px 0;
 }
 
+.custom_h6 {
+  margin: 10px 0 0 10px;
+}
+
 .custom_hr {
   display: block;
   margin: 20px 0 0 0;
@@ -353,8 +358,14 @@ footer {
   color: #CECECE;
 }
 
+.custom_unordered_list {
+  margin: 0 0 15px 0;
+
+}
+
 .blog_post h1 {
   height: 45px;
+  padding-left: 25px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
