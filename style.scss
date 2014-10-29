@@ -309,12 +309,12 @@ footer {
 }
 
 .main_row {
-  display: inline-block;  
+  display: flex;
 }
 
 .sidebar, .blogs {
 //left and middle
-  display: inline-block;
+  display: inline-flex;
 }
 
 .blogs {
@@ -322,7 +322,7 @@ footer {
 }
 
 .sidebar {
-  top: 0;
+  vertical-align: top;
   width: 20%;
   color: #000000;
   // background-color: #c8f0fe;
