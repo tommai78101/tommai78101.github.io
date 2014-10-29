@@ -317,7 +317,7 @@ footer {
 .sidebar {
   width: 200px;
   color: #000000;
-  background-color: #9ddaef;
+  background-color: #a8e9ff;
   font-size: 10px;
 }
 
@@ -350,6 +350,10 @@ footer {
   color: #1a2e7a
 }
 
+.blog_content div.entry a.back-to-top {
+  font-size: 12px;
+}
+
 //  margin:  top, right, bottom, left
 
 .custom_h4 {
@@ -380,9 +384,7 @@ footer {
   padding-left: 25px;
 }
 
-.back-to-top {
-  font-size: 12px;
-}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
