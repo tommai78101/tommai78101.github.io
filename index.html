@@ -49,17 +49,13 @@ This is to improve my web designing skills as well as create a good-looking one-
             </div>
             <div class="small-navigation">
               <a href="{{ post.url }}" class="read-more">Read More</a>
-              <nav>
-                <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
-              </nav>
+              <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
             </div>
           {% else %}
             <div class="entry">
               {{ post.content }}
             </div>
-            <nav>
-              <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
-            </nav>
+            <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
           {% endif %}
           <hr class="custom_hr">
         </article>
