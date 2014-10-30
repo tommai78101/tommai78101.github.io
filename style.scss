@@ -306,9 +306,12 @@ footer {
 
 .main_table {
   display: inline-block;
+  width: 100%;
 }
 
 .main_row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
