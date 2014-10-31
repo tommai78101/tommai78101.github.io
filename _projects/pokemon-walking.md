@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Pokémon Walking
-permalink: /portfolio/pokemon-walking/
+permalink: pokemon-walking/
 ---
 
-This is a test.
+This is Pokémon Walking.
