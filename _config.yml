@@ -79,3 +79,7 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+
+# Collections (Experimental feature, will possibly break in the future.)
+collections:
+  - projects
