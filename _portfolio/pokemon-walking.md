@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: portfolio
 title: Pokémon Walking
 ---
 
