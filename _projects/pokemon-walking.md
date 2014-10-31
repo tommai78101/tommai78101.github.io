@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Pokémon Walking
-permalink: /:title/
+permalink: pokemon-walking/
 ---
 
 This is a test.
