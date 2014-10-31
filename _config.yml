@@ -82,4 +82,5 @@ exclude:
 
 # Collections (Experimental feature, will possibly break in the future.)
 collections:
-  - projects
+  - projects:
+    output: true
