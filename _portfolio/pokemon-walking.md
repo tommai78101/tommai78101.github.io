@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Pokémon Walking
-permalink: pokemon-walking/
+permalink: /portfolio/pokemon-walking/
 ---
 
 This is Pokémon Walking.
