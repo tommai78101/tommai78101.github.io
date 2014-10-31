@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="portfolio_main">
+	{% for project in site.projects %}
 	<div class="projects_container">
-		
+		{{ project.content }}
 	</div>
+	{% endfor %}
 </div>
