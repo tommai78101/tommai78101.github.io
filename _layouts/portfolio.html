@@ -2,6 +2,11 @@
 layout: default
 ---
 
-<div>
-	{{ content }}
+<div class="portfolio_main">
+	<div class="projects_container">
+		{% capture test %}{{ content }}{% endcapture %}
+		{% if test %}
+			{{ content | size }}
+		{% endif %}
+	</div>
 </div>
