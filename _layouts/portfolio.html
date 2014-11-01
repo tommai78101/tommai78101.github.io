@@ -3,5 +3,7 @@ layout: default
 ---
 
 <div class="portfolio_main">
-	
+	{% for project in site.projects %}
+		<a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+	{% endfor %}
 </div>
