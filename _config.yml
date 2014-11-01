@@ -81,6 +81,3 @@ exclude:
     - README.md
 
 # Collections (Experimental feature, will possibly break in the future.)
-collections:
-  - projects:
-    output: true
