@@ -1,7 +1,6 @@
 ---
 layout: post
 title: First Blog Post!
-published: true
 ---
 
 ![_config.yml]({{ site.baseurl }}/images/first_blog_pic_1.png)

@@ -80,6 +80,29 @@ exclude:
     - LICENSE
     - README.md
 
+
 # Collections (Experimental feature, will possibly break in the future.)
-collections:
-  - projects
+
+
+# Setting categories (Test)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: false
+      share: false
+  -
+    scope:
+      path: "blogs"
+      type: "blogs"
+    values:
+      category: "blogs"
+  -
+    scope:
+      path: "projects"
+      type: "portfolio"
+    values:
+      category: "projects"
