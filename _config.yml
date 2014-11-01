@@ -15,7 +15,7 @@ avatar: https://en.gravatar.com/userimage/3330698/36ec59d66f91615d299d77df2018dc
 blogs: blogs
 about: about
 cv: cv
-portfolio: portfolio
+portfolio: projects
 
 #
 # Flags below are optional
@@ -82,5 +82,5 @@ exclude:
 
 # Collections (Experimental feature, will possibly break in the future.)
 collections:
-  - portfolio:
+  - projects:
     output: true
