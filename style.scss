@@ -400,6 +400,18 @@ a.back-to-top {
   padding-left: 25px;
 }
 
+div.portfolio_main div.project_showcase {
+  margin: 1em;
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  border-color: #000000;
+  border: 2px solid;
+}
+
+div.portfolio_main div.project_showcase p {
+  margin: 0 0 0 0;
+}
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

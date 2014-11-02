@@ -2,17 +2,11 @@
 layout: default
 ---
 
-<div class="tests">
-  {% for post in site.drafts %}
-    <article class="test">    
-      
-      <h1><a href="{{ site.baseurl }}{{ test.url }}">{{ test.title }}</a></h1>
+<div class="debug_test">
+	<p class="debug_output">
+		
+		{{ site.test | size }}
+		{{ content }}
 
-      <div class="entry">
-        {{ test.content | truncatewords:50}}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ test.url}}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+	</p>
 </div>

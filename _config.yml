@@ -16,6 +16,7 @@ blogs: blogs
 about: about
 cv: cv
 portfolio: projects
+assets: assets
 
 #
 # Flags below are optional
@@ -80,29 +81,12 @@ exclude:
     - LICENSE
     - README.md
 
+include:
+  - _test
 
 # Collections (Experimental feature, will possibly break in the future.)
-
+collections:
+  test:
+    output: true
 
 # Setting categories (Test)
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post
-      comments: false
-      share: false
-  -
-    scope:
-      path: "blogs"
-      type: "blogs"
-    values:
-      category: "blogs"
-  -
-    scope:
-      path: "projects"
-      type: "portfolio"
-    values:
-      category: "projects"
