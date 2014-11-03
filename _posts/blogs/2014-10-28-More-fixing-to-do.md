@@ -3,7 +3,7 @@ layout: post
 title: More fixing to do.
 ---
 
-![Imgur screenshot from a tester's PC setup.](http://i.imgur.com/BjfW8kk.png)
+[![Imgur screenshot from a tester's PC setup.](http://i.imgur.com/BjfW8kk.png)](http://i.imgur.com/BjfW8kk.png)
 
 **sigh~!**
 

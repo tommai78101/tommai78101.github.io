@@ -109,7 +109,14 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
+  max-height: 50%
+}
+
+img.displayed {
+    display: block;
+    margin: 0 auto;
+    clear: right;
 }
 
 .date {
@@ -212,7 +219,7 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue; 
-  font-size: 18px;
+  font-size: 16px;
   
   @include mobile {
     float: none;
@@ -264,8 +271,8 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
+    margin-right: 2em;
   }
 }
 
@@ -362,12 +369,12 @@ footer {
 }
 
 .blog_content div.footer_navigation_menu a {
-  font-size: 12px;
+  font-size: 14px;
   color: #1a2e7a
 }
 
 a.back-to-top {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 //  margin:  top, right, bottom, left
@@ -422,9 +429,63 @@ div.project_only p, div.side_only p {
 }
 
 div.project_only img, div.side_only img {
+  max-width: 100% !important;
+  max-height: 100% !important;
   width: 200px;
   height: 100px;
 }
+
+hr.home_custom_hr {
+  display: block;
+  margin: 3em 0 0 0;
+  border-style: solid;
+  border-width: 1px;
+  color: #CECECE;
+}
+
+div.home_project_showcase {
+  margin: 1em auto;
+  width: 400px;
+  height: 208px;  //Must take into account (the border size * 2) + original length.
+  border-color: #000000;
+  border: 4px solid; 
+}
+
+div.home_project_showcase p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 14px;
+}
+
+div.home_project_showcase p.title {
+  margin: 1em 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+div.home_project_showcase img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: 400px;
+  height: 200px;
+}
+
+div.home_blog_showcase {
+  margin-top: 1em;
+  text-align: center;
+}
+
+div.home_small_navigation {
+  text-align: center;
+}
+
+div.home_small_navigation a {
+  font-size: 14px;
+  margin: 1em 1em 0 1em;
+}
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";

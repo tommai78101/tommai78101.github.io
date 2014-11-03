@@ -40,10 +40,10 @@ layout: default
                 <h4 class="custom_h4">Written on {{ post.date | date: "%B %e, %Y" }}</h4>
               </div>
 
-              {% assign wordCount = {{ post.content | size }} %} 
-              {% if wordCount > 20 %}
+              {% assign wordCount = post.content | size %} 
+              {% if wordCount > 40 %}
                 <div class="entry">
-                  {{ post.content | truncateWords: 20 }}
+                  {{ post.content | truncatewords:40 }}
                 </div>
                 <div class="small-navigation">
                   <a href="{{ post.url }}" class="read-more">Read More</a>

@@ -10,63 +10,54 @@ This is to improve my web designing skills as well as create a good-looking one-
 
 -->
 
-<div class="main_table">
-  <div class="main_row">
-    <div class="sidebar">
-      {% for post in site.posts %}
-        {% capture currentYear %}{{ post.date | date: "%Y" }}{% endcapture %}
-        {% if currentYear != year %}
-          {% unless forloop.first %}</ul>{% endunless %}
-          <h6 class="custom_h6">{{ currentYear }}</h6>
-          <ul class="custom_unordered_list">
-          {% capture year %}{{ currentYear }}{% endcapture %}
+<div class="home_main">
+  <div class="home_project">
+    <h3>Latest Project</h3>
+    {% assign sorted = site.posts | sort: date:"%B %m %Y" %}
+    {% assign flag = false %}
+    {% for project in sorted %}
+      {% unless flag %}
+        {% if project.tag contains "project" %}
+          <div class="home_project_showcase">
+            <p><a href="{{ site.baseurl }}{{ project.url }}"><img src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
+            <p class="title"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></p>
+          </div>
+          {% assign flag = true %}
         {% endif %}
-        {% unless post.tag contains "project" %}
-          {% unless post.tag contains "side" %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-          {% endunless %}
-        {% endunless %}
-      {% endfor %}
-    </div>
-    
-    <div class="blogs">
-      <div class="section_title">
-        <h2 id="section_header2">Latest Blogs</h2>
-        <hr class="custom_hr">
-      </div>
-
-      {% for post in site.posts %}
-        {% unless post.tag contains "project" %}
-          {% unless post.tag contains "side" %}
-            <article class="post blog_content">    
-              <div class="title">
-                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-              </div>
-
-              <div class="date">
-                <h4 class="custom_h4">Written on {{ post.date | date: "%B %e, %Y" }}</h4>
-              </div>
-
-              {% assign wordCount = {{ post.content | size }} %} 
-              {% if wordCount > 20 %}
-                <div class="entry">
-                  {{ post.content | truncateWords: 20 }}
+      {% endunless %}
+    {% endfor %}
+  </div>
+  <hr class="home_custom_hr">
+  <div class="home_blog">
+    <h3>Latest Blog</h3>
+    {% assign sorted = site.posts | sort: date:"%B %m %Y" %}
+    {% assign flag = false %}
+    {% for project in sorted %}
+      {% unless flag %}
+        {% unless project.tag contains "project" %}
+          {% unless project.tag contains "side" %}
+            <div class="home_blog_showcase">
+              <p class="home_blog_title"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></p>
+              {% assign wordCount = project.content | size %} 
+              {% if wordCount > 40 %}
+                <div class="home_entry">
+                  <p class="home_blog_content">{{ project.content | truncatewords:40 }}</p>
                 </div>
-                <div class="small-navigation">
-                  <a href="{{ post.url }}" class="read-more">Read More</a>
+                <div class="home_small_navigation">
+                  <a href="{{ project.url }}" class="read-more">Read More</a>
                   <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
                 </div>
               {% else %}
-                <div class="entry">
-                  {{ post.content }}
+                <div class="home_entry">
+                  {{ project.content }}
                 </div>
                 <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
               {% endif %}
-              <hr class="custom_hr">
-            </article>
+            </div>
+            {% assign flag = true %}
           {% endunless %}
         {% endunless %}
-      {% endfor %}
-    </div>
+      {% endunless %}
+    {% endfor %}
   </div>
 </div>

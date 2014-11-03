@@ -3,7 +3,7 @@ layout: post
 title: First Blog Post!
 ---
 
-![_config.yml]({{ site.baseurl }}/images/first_blog_pic_1.png)
+[![_config.yml](http://i.imgur.com/mmMjvBT.png)](http://i.imgur.com/mmMjvBT.png)
 
 I'm happy with how this is turning out, as I'm just starting out with HTML5 and CSS3. In order for me to venture on and make updates, I need some sort of a blog to keep relevant info and knowledge around.
 
