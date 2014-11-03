@@ -21,44 +21,51 @@ This is to improve my web designing skills as well as create a good-looking one-
           <ul class="custom_unordered_list">
           {% capture year %}{{ currentYear }}{% endcapture %}
         {% endif %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% unless post.tag contains "project" %}
+          {% unless post.tag contains "side" %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endunless %}
+        {% endunless %}
       {% endfor %}
     </div>
     
     <div class="blogs">
-
       <div class="section_title">
         <h2 id="section_header2">Latest Blogs</h2>
         <hr class="custom_hr">
       </div>
 
       {% for post in site.posts %}
-        <article class="post blog_content">    
-          <div class="title">
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          </div>
+        {% unless post.tag contains "project" %}
+          {% unless post.tag contains "side" %}
+            <article class="post blog_content">    
+              <div class="title">
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              </div>
 
-          <div class="date">
-            <h4 class="custom_h4">Written on {{ post.date | date: "%B %e, %Y" }}</h4>
-          </div>
+              <div class="date">
+                <h4 class="custom_h4">Written on {{ post.date | date: "%B %e, %Y" }}</h4>
+              </div>
 
-          {% assign wordCount = {{ post.content | size }} %}
-          {% if wordCount > 40 %}
-            <div class="entry">
-              {{ post.content | truncateWords: 40 }}
-            </div>
-            <div class="small-navigation">
-              <a href="{{ post.url }}" class="read-more">Read More</a>
-              <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
-            </div>
-          {% else %}
-            <div class="entry">
-              {{ post.content }}
-            </div>
-            <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
-          {% endif %}
-          <hr class="custom_hr">
-        </article>
+              {% assign wordCount = {{ post.content | size }} %} 
+              {% if wordCount > 20 %}
+                <div class="entry">
+                  {{ post.content | truncateWords: 20 }}
+                </div>
+                <div class="small-navigation">
+                  <a href="{{ post.url }}" class="read-more">Read More</a>
+                  <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
+                </div>
+              {% else %}
+                <div class="entry">
+                  {{ post.content }}
+                </div>
+                <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
+              {% endif %}
+              <hr class="custom_hr">
+            </article>
+          {% endunless %}
+        {% endunless %}
       {% endfor %}
     </div>
   </div>
