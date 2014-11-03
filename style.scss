@@ -400,20 +400,31 @@ a.back-to-top {
   padding-left: 25px;
 }
 
-div.portfolio_main div.project_showcase {
+div.project_showcase, div.side_project_showcase {
   margin: 1em;
   display: inline-block;
   width: 200px;
-  height: 100px;
+  height: 104px;  //Must take into account (the border size * 2) + original length.
   border-color: #000000;
   border: 2px solid;
 }
 
-div.portfolio_main div.project_showcase p {
-  margin: 0 0 0 0;
+div.portfolio_main hr.separator {
+  display: block;
+  margin: 20px 0 0 0;
+  border: 1px solid #CECECE;
 }
 
+div.project_only p, div.side_only p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 14px;
+}
 
+div.project_only img, div.side_only img {
+  width: 200px;
+  height: 100px;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";

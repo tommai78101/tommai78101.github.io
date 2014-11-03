@@ -4,12 +4,27 @@ layout: default
 
 <div class="portfolio_main">
 	{% assign sorted = site.posts | sort: date:"%B %m %Y" %}
-	{% for project in sorted %}
-		{% if project.tag contains "project" %}
-			<div class="project_showcase">
-				<p><img src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></p>
-				<p><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></p>	
-			</div>
-		{% endif %}
-	{% endfor %}
+	<div class="project_only">
+		<h3>Projects</h3>
+		{% for project in sorted %}
+			{% if project.tag contains "project" %}
+				<div class="project_showcase">
+					<p><a href="{{ site.baseurl }}{{ project.url }}"><img src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
+					<p><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></p>	
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+	<hr class="separator">
+	<div class="side_only">
+		<h3>Side Projects</h3>
+		{% for side in sorted %}
+			{% if side.tag contains "side" %}
+				<div class="side_project_showcase">
+					<p><a href="{{ site.baseurl }}{{ side.url }}"><img src="{{ site.baseurl }}/assets/{{ side.showcaseImage }}"></a></p>
+					<p><a href="{{ site.baseurl }}{{ side.url }}">{{ side.title }}</a></p>	
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
 </div>
