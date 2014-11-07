@@ -7,15 +7,15 @@ layout: default
   <div class="main_row">
     <div class="sidebar">
       {% for post in site.posts %}
-        {% capture currentYear %}{{ post.date | date: "%Y" }}{% endcapture %}
-        {% if currentYear != year %}
-          {% unless forloop.first %}</ul>{% endunless %}
-          <h6 class="custom_h6">{{ currentYear }}</h6>
-          <ul class="custom_unordered_list">
-          {% capture year %}{{ currentYear }}{% endcapture %}
-        {% endif %}
         {% unless post.tag contains "project" %}
           {% unless post.tag contains "side" %}
+            {% capture currentYear %}{{ post.date | date: "%Y" }}{% endcapture %}
+            {% if currentYear != year %}
+              {% unless forloop.first %}</ul>{% endunless %}
+              <h6 class="custom_h6">{{ currentYear }}</h6>
+              <ul class="custom_unordered_list">
+              {% capture year %}{{ currentYear }}{% endcapture %}
+            {% endif %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endunless %}
         {% endunless %}
