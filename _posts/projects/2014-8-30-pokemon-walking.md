@@ -18,19 +18,17 @@ showcaseImage: proj_walking.png
 
 Implements the walking algorithm used in classic Pokémon G/S/C games. Also includes a level editor to create your own game areas.
 
-**MILESTONE HAS REACHED**, *ALL PRIORITIES ARE SHIFTED TO LOW!* That means I won't be working on this as active as I used to be, but it is still in development. Note that it does not mimic the walking algorithm used in Pokémon R/B/Y games (1st generation games). I also no longer put new releases here at GitHub, due to the lack of showing downloads count. For more information, please scroll to the bottom.
-
-**NEW UPDATE**: School life has now taken up 90% of my entire free time. As far as I know, my courses are time-consuming, I feared I can no longer update this project as I wanted. Sucks though, because this is a wonderful project I couldn't just put it down. Apparently, Java 2D isn't popular and welcomed at my school, so it's now disheartening for me to sponsor this and let everyone else know. But, I'll do my best to continue efforts on completing it. **/UPDATE**
+Currently, it is not as active as it used to be. It will be updated when things come along.
 
 <hr>
 
 **Description:**
 
-This is a project I am currently working on while I'm doing conscription service. The aim of this project is to port the walking algorithm used in the 2nd generation games of the official Pokémon game series. At the moment, I'm leaving out the 1st generation walking algorithm, as the 2nd generation games introduced "turning on the spot".
+This is a project I had been working on while I'm doing conscription service. The aim of this project is to port the walking algorithm used in the 2nd generation games of the official Pokémon game series. At the moment, I'm leaving out the 1st generation walking algorithm, as the 2nd generation games introduced "turning on the spot".
 
-If all bodes well, it's possible that this will become a Java port of the Pokémon 2nd generation games. Highly likely, but I don't want to get my hopes up too soon.
+If all bodes well, it's possible that this will become a Java port of the Pokémon 2nd generation games. Highly likely, but I don't want to get my hopes up too soon. 
 
-It's still in very early stages of development. Possibly even earlier than "alpha". *Everything is done from scratch/by hand. Only the character design is mostly mimicked from the original Pokémon games.*
+This project is deemed complete to me, but it's still in very early stages of development. Possibly even earlier than "alpha". *Everything is done from scratch/by hand. Only the character design is mostly mimicked from the original Pokémon games.*
 
 <hr>
 
@@ -85,7 +83,7 @@ It used to be painstakingly laborious to draw area maps. I had to open up Paint.
 
 With this level editor, I was able to speed up development, and easily draw out test areas for debugging new game mechanics. Just fire up this program, quickly draw something, save it, let the game load it up, and then finally test everything out. It's quick, simple, and gets the job done.
 
-This level editor is released to the public to allow players to create their own custom areas and play them from the game.
+This level editor is released to the public to allow players to create their own custom areas and play them from the game. It also allows players to trigger custom events in the area, however, it has not been implemented yet due to the protocols not yet finalized. If anyone knows of a better protocol for triggers and wishes to share it with me, I'd be gladly to hear your feedback.
 
 <hr>
 
@@ -107,7 +105,7 @@ This level editor is released to the public to allow players to create their own
 
 **Features:**
 
-| In development | Beta (Close to completion) | Complete |
+| **In development** | **Beta (Close to completion)** | **Complete** |
 |:---:|:---:|:---:|
 | Entity Interaction | Overworld | All Movements* |
 | Ground Height Lighting | Dialogues | Ledges |
@@ -138,8 +136,8 @@ This level editor is released to the public to allow players to create their own
 
 <hr>
 
-| Downloads | Latest Stable Version | Link |
-|:---:|:---:|:---:|
+| **Downloads** | **Latest Stable Version** | **Link** |
+|:---:|:------------:|:---:|
 | Walking | v19 | http://www.thehelper.net/attachments/walking_v19-zip.18695/ |
 | Editor | v5 | http://www.thehelper.net/attachments/editor_v5-zip.18692/ |
 
@@ -151,7 +149,7 @@ Extract the JAR file from the ZIP file after you have downloaded it. Then double
 
 You may head over to The Helper Forums, or Java-Gaming.org to post your feedback and/or comments. Much appreciated.
 
-| Discussion Site | Link to Discussion Thread (Including latest release info) |
+| **Discussion Site** | **Link to Discussion Thread (Including latest release info)** |
 |:---:|:---:|
 | The Helper Forums | http://www.thehelper.net/threads/java-pok%C3%A9mon-walking-algorithm.159287/ |
 | Java-Gaming.org | http://www.java-gaming.org/topics/pok-mon-walking/32546/view.html |
