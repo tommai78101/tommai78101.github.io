@@ -12,15 +12,15 @@ This is to improve my web designing skills as well as create a good-looking one-
 
 <div class="home_main">
   <div class="home_project">
-    <h3>Latest Project</h3>
+    <h3>Most Active Project</h3>
     {% assign sorted = site.posts | sort: date:"%B %m %Y" %}
     {% assign flag = false %}
     {% for project in sorted %}
       {% unless flag %}
-        {% if project.tag contains "project" %}
+        {% if project.tag contains "project" and project.isCurrentProject == true %}
           <div class="home_project_showcase">
-            <p><a href="{{ site.baseurl }}{{ project.url }}"><img src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
-            <p class="title"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></p>
+            <p><a href="{{ project.projectUrl }}"><img src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
+            <p class="title"><a href="{{ project.projectUrl }}">{{ project.title }}</a></p>
           </div>
           {% assign flag = true %}
         {% endif %}
@@ -37,7 +37,7 @@ This is to improve my web designing skills as well as create a good-looking one-
         {% unless project.tag contains "project" %}
           {% unless project.tag contains "side" %}
             <div class="home_blog_showcase">
-              <p class="home_blog_title"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></p>
+              <p class="home_blog_title"><a href="{{ project.projectUrl }}">{{ project.title }}</a></p>
               {% assign wordCount = project.content | size %} 
               {% if wordCount > 40 %}
                 <div class="home_entry">

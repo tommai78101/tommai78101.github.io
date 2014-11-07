@@ -119,6 +119,11 @@ img.displayed {
     clear: right;
 }
 
+img.avatar {
+  max-width: 100%;
+  max-height: 100% 
+}
+
 .date {
   font-style: italic;
   color: $gray;
@@ -433,6 +438,13 @@ div.project_only img, div.side_only img {
   max-height: 100% !important;
   width: 200px;
   height: 100px;
+}
+
+div.project_only span.smaller_text, div.side_only span.smaller_text {
+  font-family: $helveticaNeue;
+  color: #777777;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 hr.home_custom_hr {
