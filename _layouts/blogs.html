@@ -46,9 +46,8 @@ layout: default
                   {{ post.content | truncatewords:40 }}
                 </div>
                 <div class="small-navigation">
-                  <a href="{{ post.url }}" class="read-more">Read More</a>
+                  <a href="{{ post.url }}" class="read-more">Full Post</a>
                   <a href="{{ site.baseurl }}/" class="back-to-top">Back to Top</a>
-                  {{ wordCount }}
                 </div>
               {% else %}
                 <div class="entry">
