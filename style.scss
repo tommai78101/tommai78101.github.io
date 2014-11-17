@@ -382,6 +382,10 @@ a.back-to-top {
   font-size: 14px;
 }
 
+a.project_url {
+  font-size: 16px;
+}
+
 //  margin:  top, right, bottom, left
 
 .custom_h4 {
@@ -415,8 +419,8 @@ a.back-to-top {
 div.project_showcase, div.side_project_showcase {
   margin: 1em;
   display: inline-block;
-  width: 200px;
-  height: 104px;  //Must take into account (the border size * 2) + original length.
+  width: 320px;
+  height: 164px;  //Must take into account (the border size * 2) + original length.
   border-color: #000000;
   border: 2px solid;
 }
@@ -431,13 +435,14 @@ div.project_only p, div.side_only p {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   font-size: 14px;
+  text-align: center;
 }
 
 div.project_only img, div.side_only img {
   max-width: 100% !important;
   max-height: 100% !important;
-  width: 200px;
-  height: 100px;
+  width: 320px;
+  height: 160px;
 }
 
 div.project_only span.smaller_text, div.side_only span.smaller_text {
