@@ -40,8 +40,9 @@ $(document).ready(function(){
  	//Bluetooth
  	$("#project004").hover(
          //This function is mouseOver. GIF goes here.
+         //Note that due to the nature of the project, there is no GIF available.
          function(){
-         	$(this).attr("src", "");
+         	$(this).attr("src", "../assets/proj_bluetooth.png");
          },
          //This function is mouseOut. Static image goes here.
          function(){
