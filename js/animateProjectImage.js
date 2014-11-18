@@ -30,7 +30,7 @@ $(document).ready(function(){
  	$("#project003").hover(
          //This function is mouseOver. GIF goes here.
          function(){
-         	$(this).attr("src", "");
+         	$(this).attr("src", "../assets/proj_walking.gif");
          },
          //This function is mouseOut. Static image goes here.
          function(){
