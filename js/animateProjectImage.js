@@ -19,7 +19,7 @@ $(document).ready(function(){
  	$("#project002").hover(
          //This function is mouseOver. GIF goes here.
          function(){
-         	$(this).attr("src", "");
+         	$(this).attr("src", "../assets/proj_pixavive.gif");
          },
          //This function is mouseOut. Static image goes here.
          function(){
