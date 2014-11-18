@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="../js/animateProjectImage.js" type="text/javascript"></script>
+
 <div class="portfolio_main">
 	{% assign sorted = site.posts | sort: date:"%B %m %Y" %}
 	<div class="project_only">
@@ -9,7 +12,7 @@ layout: default
 		{% for project in sorted %}
 			{% if project.tag contains "project" %}
 				<div class="project_showcase">
-					<p><a href="{{ project.projectUrl }}"><img src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
+					<p><a href="{{ project.projectUrl }}"><img id="{{ project.jsid }}" src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
 					<p><a class="project_url" href="{{ project.projectUrl }}">{{ project.title }} ({{ project.dateOfCreation }})</a></p>	
 				</div>
 			{% endif %}
@@ -21,7 +24,7 @@ layout: default
 		{% for side in sorted %}
 			{% if side.tag contains "side" %}
 				<div class="side_project_showcase">
-					<p><a href="{{ side.projectUrl }}"><img src="{{ site.baseurl }}/assets/{{ side.showcaseImage }}"></a></p>
+					<p><a href="{{ side.projectUrl }}"><img id="{{ side.jsid }}" src="{{ site.baseurl }}/assets/{{ side.showcaseImage }}"></a></p>
 					<p><a href="{{ side.projectUrl }}">{{ side.title }} ({{ side.dateOfCreation }})</a></p>	
 				</div>
 			{% endif %}

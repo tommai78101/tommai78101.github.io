@@ -7,4 +7,5 @@ showcaseImage: proj_walking.png
 projectUrl: https://github.com/tommai78101/PokemonWalking
 isCurrentProject: true
 dateOfCreation: 2013/5/12
+jsid: project003
 ---
