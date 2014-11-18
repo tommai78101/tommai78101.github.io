@@ -41,9 +41,9 @@ layout: default
               </div>
 
               {% assign wordCount = post.content | size %} 
-              {% if wordCount > 40 %}
+              {% if wordCount > 120 %}
                 <div class="entry">
-                  {{ post.content | truncatewords:40 }}
+                  {{ post.content | truncatewords:120 }}
                 </div>
                 <div class="small-navigation">
                   <a href="{{ post.url }}" class="read-more">Full Post</a>
