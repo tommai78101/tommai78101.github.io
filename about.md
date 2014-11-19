@@ -7,14 +7,26 @@ permalink: /about/
 <table>
 	<thead>
 		<tr style="border-bottom:1px solid #000;background-color: #eee;">
-			<th style="text-align:center;">Info</th>
-			<th style="text-align:center;">Description</th>
+			<th style="text-align:center;padding: 0 35px 0 15px;"><strong>Info</strong></th>
+			<th style="text-align:center;padding: 0 35px 0 15px;"><strong>Description</strong></th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td  style="text-align:center;padding: 0 15px 0 15px;" >Role</td>
+			<td  style="text-align:center;padding: 0 15px 0 15px;" ><strong>Role</strong></td>
 			<td  style="text-align:center;padding: 0 15px 0 15px;" >Game Developer</td>
+		</tr>
+		<tr>
+			<td  style="text-align:center;padding: 0 15px 0 15px;" ><strong>Future Roles</strong></td>
+			<td  style="text-align:center;padding: 0 15px 0 15px;" >Game Producer</td>
+		</tr>
+		<tr>
+			<td  style="text-align:center;padding: 0 15px 0 15px;" ><strong>Past Roles</strong></td>
+			<td  style="text-align:center;padding: 0 15px 0 15px;" >Lead Game Designer, Game Programmer</td>
+		</tr>
+		<tr>
+			<td  style="text-align:center;padding: 0 15px 0 15px;" ><strong>Current Status</strong></td>
+			<td  style="text-align:center;padding: 0 15px 0 15px;" >Graduate Student</td>
 		</tr>
 	</tbody>
 </table>
