@@ -4,7 +4,7 @@ title: About this guy...
 permalink: /about/
 ---
 
-<table>
+<table style="text-align:center;">
 	<thead>
 		<tr style="border-bottom:1px solid #000;background-color: #eee;">
 			<th style="text-align:center;padding: 0 35px 0 15px;border-right:1px solid #000;"><strong>Info</strong></th>
@@ -31,12 +31,6 @@ permalink: /about/
 	</tbody>
 </table>
 
-| **Info** | **Description** |
-|:---:|:---:|
-| Role | Game Developer |
-| Future Roles | Game Producer |
-| Past Roles | Lead Game Designer, Game Programmer |
-| Current Status | Graduate Student | 
 
 Thompson Lee is a light-hearted game developer that strives to create fun games. Eventually.
 
