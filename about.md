@@ -4,7 +4,7 @@ title: About this guy...
 permalink: /about/
 ---
 
-<table style="text-align:center;">
+<table style="margin: 0 auto;">
 	<thead>
 		<tr style="border-bottom:1px solid #000;background-color: #eee;">
 			<th style="text-align:center;padding: 0 35px 0 15px;border-right:1px solid #000;"><strong>Info</strong></th>
