@@ -5,10 +5,18 @@ permalink: /about/
 ---
 
 <table>
-	<tr style="border-bottom:1px solid #000;">
-		<td><strong>Info</strong></td>
-		<td><strong>Description</strong></td>
-	</tr>
+	<thead>
+		<tr style="border-bottom:1px solid #000;background-color: #eee;">
+			<th style="text-align:center;">Info</th>
+			<th style="text-align:center;">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td  style="text-align:center;padding: 0 5px 0 5px;" >Role</td>
+			<td  style="text-align:center;padding: 0 5px 0 5px;" >Game Developer</td>
+		</tr>
+	</tbody>
 </table>
 
 | **Info** | **Description** |
