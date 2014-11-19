@@ -30,9 +30,9 @@ He currently studies in Interactive Media and Game Development at Worcester Poly
 
 He has a Bachelor of Science in Computer Science and Information Engineering, and has obtained the certificate of completing the basic military training during his time in conscription service.
 
-<div id="contactInfo" style="#contactInfo:hover #email {max-height: 500px; transition: max-height 0.25s ease-in;}">
+<div class="contactInfo" style="max-height: 500px; transition: max-height 0.25s ease-in;">
 	<h4><a>Contact Info</a></h4>
-	<ul id="email">
-		<li>[tom.mai78101@gmail.com](mailto:tom.mai78101@gmail.com)</li>
+	<ul class="email" style="max-height: 500px; transition: max-height 0.25s ease-in;">
+		<li><a href="mailto:tom.mai78101@gmail.com">tom.mai78101@gmail.com</a></li>
 	</ul>
 </div>
