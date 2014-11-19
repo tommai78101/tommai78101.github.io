@@ -4,6 +4,13 @@ title: About this guy...
 permalink: /about/
 ---
 
+<table>
+	<tr style="padding-bottom: 2px; background-color: #000000;">
+		<td><strong>Info</strong></td>
+		<td><strong>Description</strong></td>
+	</tr>
+</table>
+
 | **Info** | **Description** |
 |:---:|:---:|
 | Role | Game Developer |
