@@ -502,13 +502,13 @@ div.home_small_navigation a {
   margin: 1em 1em 0 1em;
 }
 
-div.contactInfo div.email {
+div.contactInfo .email {
   max-height: 0%;
   transition: max-height 0.15s ease-out;
   overflow: hidden;
 }
 
-div.contactInfo:hover div.email {
+div.contactInfo:hover .email {
   max-height: 100%;
   transition: max-height 0.25s ease-in;
 }

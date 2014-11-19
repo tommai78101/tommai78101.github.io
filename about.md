@@ -31,6 +31,8 @@ He has a Bachelor of Science in Computer Science and Information Engineering, an
 
 <div class="contactInfo">
 	<h4>Contact Info <span style="font-size: 12px;">(Hover to see.)</span></h4>
-	<div class="email"><a href="mailto:tom.mai78101@gmail.com">tom.mai78101@gmail.com</a></div>
+	<ul class="email">
+		<li><a href="mailto:tom.mai78101@gmail.com">tom.mai78101@gmail.com</a></li>
+	</ul>
 </div>
 
