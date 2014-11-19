@@ -22,9 +22,9 @@ permalink: /about/
 		</tr>
 		<tr style="border-bottom:1px solid #000;">
 			<td  style="text-align:center;padding: 0 35px 0 15px;border-right:1px solid #000;" ><strong>Past Roles</strong></td>
-			<td  style="text-align:center;padding: 0 35px 0 35px;" >Lead Game Designer, Game Programmer</td>
+			<td  style="text-align:center;padding: 0 35px 0 35px;" >Lead Game Designer<br>Game Programmer</td>
 		</tr>
-		<tr style="border-bottom:1px solid #000;">
+		<tr>
 			<td  style="text-align:center;padding: 0 35px 0 15px;border-right:1px solid #000;" ><strong>Current Status</strong></td>
 			<td  style="text-align:center;padding: 0 35px 0 35px;" >Graduate Student</td>
 		</tr>
