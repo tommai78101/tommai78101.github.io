@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <table>
-	<tr style="padding-bottom: 2px; background-color: #000000;">
+	<tr style="border-bottom:1px solid #000;">
 		<td><strong>Info</strong></td>
 		<td><strong>Description</strong></td>
 	</tr>
