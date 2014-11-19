@@ -7,24 +7,24 @@ permalink: /about/
 <table>
 	<thead>
 		<tr style="border-bottom:1px solid #000;background-color: #eee;">
-			<th style="text-align:center;padding: 0 35px 0 15px;"><strong>Info</strong></th>
+			<th style="text-align:center;padding: 0 35px 0 15px;border-right:1px solid #000;"><strong>Info</strong></th>
 			<th style="text-align:center;padding: 0 35px 0 35px;"><strong>Description</strong></th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
+		<tr style="border-bottom:1px solid #000;">
 			<td  style="text-align:center;padding: 0 35px 0 15px;border-right:1px solid #000;" ><strong>Role</strong></td>
 			<td  style="text-align:center;padding: 0 35px 0 35px;" >Game Developer</td>
 		</tr>
-		<tr>
+		<tr style="border-bottom:1px solid #000;">
 			<td  style="text-align:center;padding: 0 35px 0 15px;border-right:1px solid #000;" ><strong>Future Roles</strong></td>
 			<td  style="text-align:center;padding: 0 35px 0 35px;" >Game Producer</td>
 		</tr>
-		<tr>
+		<tr style="border-bottom:1px solid #000;">
 			<td  style="text-align:center;padding: 0 35px 0 15px;border-right:1px solid #000;" ><strong>Past Roles</strong></td>
 			<td  style="text-align:center;padding: 0 35px 0 35px;" >Lead Game Designer, Game Programmer</td>
 		</tr>
-		<tr>
+		<tr style="border-bottom:1px solid #000;">
 			<td  style="text-align:center;padding: 0 35px 0 15px;border-right:1px solid #000;" ><strong>Current Status</strong></td>
 			<td  style="text-align:center;padding: 0 35px 0 35px;" >Graduate Student</td>
 		</tr>
