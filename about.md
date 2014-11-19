@@ -13,8 +13,8 @@ permalink: /about/
 	</thead>
 	<tbody>
 		<tr>
-			<td  style="text-align:center;padding: 0 5px 0 5px;" >Role</td>
-			<td  style="text-align:center;padding: 0 5px 0 5px;" >Game Developer</td>
+			<td  style="text-align:center;padding: 0 15px 0 15px;" >Role</td>
+			<td  style="text-align:center;padding: 0 15px 0 15px;" >Game Developer</td>
 		</tr>
 	</tbody>
 </table>
