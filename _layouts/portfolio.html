@@ -36,7 +36,7 @@ layout: default
 		{% for demo in sorted %}
 			{% if demo.tag contains "demo" %}
 				<div class="tech_demo_showcase">
-					<embed width="480" height="360" src="http://www.youtube.com/v/{{ demo.youtubeURL }}" style="margin-bottom: 16px;">
+					<embed width="480" height="360" src="http://www.youtube.com/v/{{ demo.youtubeURL }}" style="margin-bottom: 16px;" allowfullscreen>
 				</div>
 			{% endif %}
 		{% endfor %}
