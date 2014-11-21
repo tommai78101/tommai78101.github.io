@@ -25,7 +25,7 @@ layout: default
 			{% if side.tag contains "side" %}
 				<div class="side_project_showcase">
 					<p><a href="{{ side.projectUrl }}"><img id="{{ side.jsid }}" src="{{ site.baseurl }}/assets/{{ side.showcaseImage }}"></a></p>
-					<p><a href="{{ side.projectUrl }}">{{ side.title }} ({{ side.dateOfCreation }})</a></p>	
+					<p><a class="project_url" href="{{ side.projectUrl }}">{{ side.title }} ({{ side.dateOfCreation }})</a></p>	
 				</div>
 			{% endif %}
 		{% endfor %}
