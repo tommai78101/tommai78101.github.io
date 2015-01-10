@@ -48,7 +48,7 @@ layout: default
 		{% for docs in sorted %}
 			{% if docs.tag contains "docs" %}
 				<div class="documents_showcase">
-					<p style="margin-top: -10px;">{{ docs.title }}</p>
+					<p style="margin-top: -10px;"><a href="{{ docs.assetFileURL }}">{{ docs.title }}</a></p>
 				</div>
 			{% endif %}
 		{% endfor %}
