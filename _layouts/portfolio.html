@@ -42,4 +42,15 @@ layout: default
 			{% endif %}
 		{% endfor %}
 	</div>
+	<hr class="separator">
+	<div class="documents">
+		<h3>Documents <span class="smaller_text">(Sorted by semester, descending)</span></h3>
+		{% for docs in sorted %}
+			{% if docs.tag contains "docs" %}
+				<div class="documents_showcase">
+					<p style="margin-top: -10px;">{{ docs.title }}</p>
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
 </div>
