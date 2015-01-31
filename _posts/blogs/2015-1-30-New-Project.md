@@ -3,6 +3,8 @@ layout: post
 title: New Project!
 ---
 
+<p style="text-align: center;"><img src="{{ site.baseurl }}/images/rotation/rotation.gif" alt="Short demonstration of the game" style="width: 200px; height: 200px;" /></p>
+
 I am currently working on a new assignment for my extra credit. 
 
 It was inspired by a Javascript engine called Perlenspiel, which is an in-house rendering engine for game development classes here at WPI.
