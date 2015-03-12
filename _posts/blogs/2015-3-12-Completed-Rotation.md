@@ -3,7 +3,7 @@ layout: post
 title: Completed Rotation!
 ---
 
-<p style="text-align: center;"><img src="{{ site.baseurl }}/assets/rotation/proj_rotation.gif" alt="Short demonstration of the game" style="width: 200px; height: 113px;" /></p>
+<p style="text-align: center;"><img src="{{ site.baseurl }}/assets/proj_rotation.gif" alt="Short demonstration of the game" style="width: 200px; height: 113px;" /></p>
 
 Finally did it!
 
