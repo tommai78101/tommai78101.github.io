@@ -49,8 +49,8 @@ $(document).ready(function(){
          	$(this).attr("src", "../assets/proj_bluetooth.png");
          }
  	);
-   //Rotation
-   $("#project011").hover(
+   	//Rotation
+   	$("#project011").hover(
          //This function is mouseOver. GIF goes here.
          //Note that due to the nature of the project, there is no GIF available.
          function(){
@@ -59,6 +59,16 @@ $(document).ready(function(){
          //This function is mouseOut. Static image goes here.
          function(){
             $(this).attr("src", "../assets/proj_rotation.png");
+         }
+        $("#project012").hover(
+         //This function is mouseOver. GIF goes here.
+         //Note that due to the nature of the project, there is no GIF available.
+         function(){
+            $(this).attr("src", "../assets/proj_getdebt.gif");
+         },
+         //This function is mouseOut. Static image goes here.
+         function(){
+            $(this).attr("src", "../assets/proj_getdebt.png");
          }
    );
 });
