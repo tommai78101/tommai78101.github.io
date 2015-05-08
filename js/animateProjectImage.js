@@ -60,7 +60,8 @@ $(document).ready(function(){
          function(){
             $(this).attr("src", "../assets/proj_rotation.png");
          }
-        $("#project012").hover(
+      );
+    $("#project012").hover(
          //This function is mouseOver. GIF goes here.
          //Note that due to the nature of the project, there is no GIF available.
          function(){
@@ -70,6 +71,5 @@ $(document).ready(function(){
          function(){
             $(this).attr("src", "../assets/proj_getdebt.png");
          }
-        );
-   );
+     );
 });
