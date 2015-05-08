@@ -70,5 +70,6 @@ $(document).ready(function(){
          function(){
             $(this).attr("src", "../assets/proj_getdebt.png");
          }
+        );
    );
 });
