@@ -9,7 +9,9 @@ Thanks to those who helped along the way on the official Unity forums, as well a
 
 Knowing that UNET provides [Command] and [ClientRPC], these are enough to make basic network code that the server and the client can understand and interact. But these can go more in depth with the use of [Client] (or known as [ClientCallback]), [Server] (or known as [ServerCallback]).
 
-The template is as follows:
+As of writing this post, the UNET documentation is not up to a standard that is acceptable. I know some of the users on the official Unity Forums were also not happy about it, but I digress.
+
+The code template is as follows:
 
 {% highlight csharp %}
 using UnityEngine.Networking;
