@@ -44,7 +44,6 @@ layout: default
               {% if wordCount > 120 %}
                 <div class="entry">
                   {{ post.content | truncatewords:120 }}
-                  {% endhighlight %}
                 </div>
                 <div class="small-navigation">
                   <a href="{{ post.url }}" class="read-more">Full Post</a>
