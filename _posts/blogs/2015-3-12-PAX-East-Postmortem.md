@@ -5,7 +5,7 @@ title: PAX East Postmortem
 
 I am writing about my experiences at PAX East 2015, while working as a volunteer at a MassDigi booth showcasing my fellow classmate's Wooplex game.
 
-<img src="{{ site.baseurl }}/images/pax/wooplex.jpg" alt="MassDigi Wooplex booth." style="width: 300px; height: 160px;" />
+<p style="text-align: center;"><img src="{{ site.baseurl }}/images/pax/wooplex.jpg" alt="MassDigi Wooplex booth." style="width: 300px; height: 160px;" /><p/>
 
 The most I learned from PAX East (Not strictly in any order):
 
