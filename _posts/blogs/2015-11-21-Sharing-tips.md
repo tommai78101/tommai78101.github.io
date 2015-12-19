@@ -5,6 +5,7 @@ title: Sharing a tip when using Unity Networking (UNET)
 
 For those of you learning how to use Unity Networking, or UNET for short, here's a template that I created that will help you learn the basics of using UNET.
 
+{% highlight csharp %}
     using UnityEngine.Networking;
      
     public class CustomScript : NetworkBehaviour {
@@ -98,5 +99,6 @@ For those of you learning how to use Unity Networking, or UNET for short, here's
             }
         }
     }
+{% endhighlight %}
         
 Hope this helps.
