@@ -5,6 +5,10 @@ title: Sharing a tip when using Unity Networking (UNET)
 
 For those of you learning how to use Unity Networking, or UNET for short, here's a template that I created that will help you learn the basics of using UNET.
 
+Thanks to those who helped along the way on the official Unity forums, as well as some of those on Freenode IRC channel #unity3d, #reddit-gamedev, and #gamedev.
+
+The template is as follows:
+
 {% highlight csharp %}
 using UnityEngine.Networking;
      
