@@ -7,6 +7,8 @@ For those of you learning how to use Unity Networking, or UNET for short, here's
 
 Thanks to those who helped along the way on the official Unity forums, as well as some of those on Freenode IRC channel #unity3d, #reddit-gamedev, and #gamedev.
 
+Knowing that UNET provides [Command] and [ClientRPC], these are enough to make basic network code that the server and the client can understand and interact. But these can go more in depth with the use of [Client] (or known as [ClientCallback]), [Server] (or known as [ServerCallback]).
+
 The template is as follows:
 
 {% highlight csharp %}
