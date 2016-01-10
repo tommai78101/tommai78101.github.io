@@ -3,7 +3,7 @@ layout: post
 title: Got my Christmas Gift!
 ---
 
-<p style="text-align: center;"><img src="{{ site.baseurl }}images/christmas/bundle_ac_n3ds.jpg" alt="MassDigi Wooplex booth." style="width: 300px; height: 160px;" /><p/>
+<p style="text-align: center;"><img src="{{ site.baseurl }}/images/christmas/bundle_ac_n3ds.jpg" alt="MassDigi Wooplex booth." style="width: 300px; height: 160px;" /><p/>
 
 I got myself an Animal Crossing Bundle with New Nintendo 3DS!
 
