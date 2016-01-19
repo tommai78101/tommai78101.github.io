@@ -511,9 +511,9 @@ div.home_small_navigation a {
 }
 
 div.contactInfo .email {
-  max-height: 0;
-  transition: max-height 0.15s ease-out;
-  overflow: hidden;
+  max-height: 20;
+  //transition: max-height 0.15s ease-out;
+  //overflow: hidden;
 }
 
 div.contactInfo:hover .email {
