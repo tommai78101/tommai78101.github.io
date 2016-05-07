@@ -25,22 +25,22 @@ assets: assets
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: tom.mai78101@gmail.com
-  facebook: 
+  email: asperatology@gmail.com
+  facebook: https://www.facebook.com/csie.o.b
   flickr: 
   github: tommai78101
   instagram: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/thompson-lee-94a026a8?trk=nav_responsive_tab_profile_pic
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: #
+  twitter: https://twitter.com/asperatology
   stackoverflow: users/1016891/tom-mai78101
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: 
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-77412958-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
