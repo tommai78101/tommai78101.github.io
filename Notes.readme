@@ -7,6 +7,7 @@ Home:
 	3. Categorize particular properties, such as roles, wants, needs, so that employers can easily and obviously check my qualities and skills.
 
 Portfolio:
+	IMPORTANT: To make the animations, edit/modify the JavaScript file that handles the animations.
 	1. Make animated GIFs on project screenshots. Use jQuery to animate them. Preferably need to do a bit of research.
 	2. Need to start a new large project soon. Should involve Android OpenGL.
 	3. May need to add projects from class. Those can be recorded into animated GIFs.
