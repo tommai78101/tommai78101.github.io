@@ -56,7 +56,7 @@ baseurl: "https://asperatology.me"
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 highlighter: rouge
