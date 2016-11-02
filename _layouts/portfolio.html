@@ -8,13 +8,13 @@ layout: default
 <div class="portfolio_main">
 	{% assign sorted = site.posts | sort: date:"%B %m %Y" %}
 	<div class="project_only">
-		<h3>Projects <span class="smaller_text">(Sorted by date of creation, hover over image to see demo)</span></h3>
+		<h3>Projects <span class="smaller_text">(Sorted by date of creation, hover over image to see demo, click image for more info)</span></h3>
 		{% for project in sorted %}
 			{% if project.tag contains "project" %}
 				<div class="project_showcase">
 					<p><a href="{{ project.projectUrl }}"><img id="{{ project.jsid }}" src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
 					<p><a class="project_url" href="{{ project.projectUrl }}">{{ project.title }} ({{ project.dateOfCreation }})</a></p>
-					<p style="text-align: justify; text-indent: 30px;">{{ project.summary }}</p>
+					<p class="summary">{{ project.summary }}</p>
 				</div>
 			{% endif %}
 		{% endfor %}
@@ -26,7 +26,8 @@ layout: default
 			{% if side.tag contains "side" %}
 				<div class="side_project_showcase">
 					<p><a href="{{ side.projectUrl }}"><img id="{{ side.jsid }}" src="{{ site.baseurl }}/assets/{{ side.showcaseImage }}"></a></p>
-					<p><a class="project_url" href="{{ side.projectUrl }}">{{ side.title }} ({{ side.dateOfCreation }})</a></p>	
+					<p><a class="project_url" href="{{ side.projectUrl }}">{{ side.title }} ({{ side.dateOfCreation }})</a></p>
+					<p class="summary">{{ side.summary }}</p>
 				</div>
 			{% endif %}
 		{% endfor %}
