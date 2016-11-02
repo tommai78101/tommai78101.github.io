@@ -425,8 +425,8 @@ a.project_url {
 }
 
 div.project_showcase, div.side_project_showcase {
-  margin: 1em;
   display: inline-block;
+  margin: 2em;
   width: 320px;
   height: 164px;  //Must take into account (the border size * 2) + original length.
   border-color: #000000;
