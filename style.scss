@@ -426,7 +426,7 @@ a.project_url {
 
 div.project_showcase, div.side_project_showcase {
   display: inline-block;
-  margin: 2em;
+  margin: 1em;
   width: 320px;
   height: 164px;  //Must take into account (the border size * 2) + original length.
   border-color: #000000;
@@ -444,6 +444,21 @@ div.project_only p, div.side_only p {
   padding: 0 0 0 0;
   font-size: 14px;
   text-align: center;
+}
+
+div.project_only p.title, div.side_only p.title {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+div.project_only p.summary, div.side_only p.summary {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 14px;
+  text-align: justify;
+  text-indent: 30px;
 }
 
 div.project_only img, div.side_only img {
