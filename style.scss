@@ -364,11 +364,6 @@ article {
   font-size: 12px;
 }
 
-.summary {
-  text-align: justify;
-  text-indent: 30px;
-}
-
 .blog div {
   margin-top: 0;
   margin-bottom: 0;
@@ -449,6 +444,11 @@ div.project_only p, div.side_only p {
   padding: 0 0 0 0;
   font-size: 14px;
   text-align: center;
+}
+
+div.project_only p, div.side_only p.summary {
+  text-align: justify;
+  text-indent: 30px;
 }
 
 div.project_only img, div.side_only img {
