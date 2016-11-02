@@ -14,7 +14,7 @@ layout: default
 				<div class="project_showcase">
 					<p><a href="{{ project.projectUrl }}"><img id="{{ project.jsid }}" src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
 					<p><a class="project_url" href="{{ project.projectUrl }}">{{ project.title }} ({{ project.dateOfCreation }})</a></p>
-					<p>{{ project.summary }}</p>
+					<p style="text-align: justify; text-indent: 10px;">{{ project.summary }}</p>
 				</div>
 			{% endif %}
 		{% endfor %}
