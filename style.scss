@@ -433,6 +433,16 @@ div.project_showcase, div.side_project_showcase {
   border: 2px solid;
 }
 
+div.project_showcase p.project_url, div.side_project_showcase p.project_url {
+  font-size: 20px;
+  text-align: center;
+}
+
+div.project_showcase p.summary, div.side_project_showcase p.summary {
+  text-align: justify;
+  text-indent: 30px;
+}
+
 div.portfolio_main hr.separator {
   display: block;
   margin: 20px 0 0 0;
@@ -444,11 +454,6 @@ div.project_only p, div.side_only p {
   padding: 0 0 0 0;
   font-size: 14px;
   text-align: center;
-}
-
-div.project_only p, div.side_only p.summary {
-  text-align: justify;
-  text-indent: 30px;
 }
 
 div.project_only img, div.side_only img {
@@ -490,7 +495,7 @@ div.home_project_showcase p {
 div.home_project_showcase p.title {
   margin: 1em 0 0 0;
   padding: 0 0 0 0;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
 }
 
