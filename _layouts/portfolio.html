@@ -7,24 +7,14 @@ layout: default
 
 <div class="portfolio_main">
 	{% assign sorted = site.posts | sort: date:"%B %m %Y" %}
-	<div class="documents">
-		<h3>Documents <span class="smaller_text">(Sorted by semester, descending)</span></h3>
-		{% for docs in sorted %}
-			{% if docs.tag contains "docs" %}
-				<div class="documents_showcase">
-					<p style="margin-top: -10px;"><a href="{{ docs.assetFileURL }}">{{ docs.title }}</a></p>
-				</div>
-			{% endif %}
-		{% endfor %}
-	</div>
-	<hr class="separator">
 	<div class="project_only">
 		<h3>Projects <span class="smaller_text">(Sorted by date of creation, hover over image to see demo)</span></h3>
 		{% for project in sorted %}
 			{% if project.tag contains "project" %}
 				<div class="project_showcase">
 					<p><a href="{{ project.projectUrl }}"><img id="{{ project.jsid }}" src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
-					<p><a class="project_url" href="{{ project.projectUrl }}">{{ project.title }} ({{ project.dateOfCreation }})</a></p>	
+					<p><a class="project_url" href="{{ project.projectUrl }}">{{ project.title }} ({{ project.dateOfCreation }})</a></p>
+					<p>{{ project.summary }}</p>
 				</div>
 			{% endif %}
 		{% endfor %}
@@ -53,4 +43,16 @@ layout: default
 			{% endif %}
 		{% endfor %}
 	</div>
+	<hr class="separator">
+	<div class="documents">
+		<h3>Documents <span class="smaller_text">(Sorted by semester, descending)</span></h3>
+		{% for docs in sorted %}
+			{% if docs.tag contains "docs" %}
+				<div class="documents_showcase">
+					<p style="margin-top: -10px;"><a href="{{ docs.assetFileURL }}">{{ docs.title }}</a></p>
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+	
 </div>
