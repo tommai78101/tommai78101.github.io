@@ -424,15 +424,6 @@ a.project_url {
   padding-left: 25px;
 }
 
-div.project_showcase, div.side_project_showcase {
-  margin: 1em;
-  display: inline-block;
-  width: 320px;
-  height: 164px;  //Must take into account (the border size * 2) + original length.
-  border-color: #000000;
-  border: 2px solid;
-}
-
 div.project_showcase p.project_url, div.side_project_showcase p.project_url {
   font-size: 20px;
   text-align: center;
@@ -441,6 +432,15 @@ div.project_showcase p.project_url, div.side_project_showcase p.project_url {
 div.project_showcase p.summary, div.side_project_showcase p.summary {
   text-align: justify;
   text-indent: 30px;
+}
+
+div.project_showcase, div.side_project_showcase {
+  margin: 1em;
+  display: inline-block;
+  width: 320px;
+  height: 164px;  //Must take into account (the border size * 2) + original length.
+  border-color: #000000;
+  border: 2px solid;
 }
 
 div.portfolio_main hr.separator {
@@ -529,6 +529,16 @@ div.contactInfo .email {
 div.contactInfo:hover .email {
   max-height: 100%;
   transition: max-height 0.25s ease-in;
+}
+
+div.project_showcase p.project_url, div.side_project_showcase p.project_url {
+  font-size: 20px;
+  text-align: center;
+}
+
+div.project_showcase p.summary, div.side_project_showcase p.summary {
+  text-align: justify;
+  text-indent: 30px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
