@@ -424,16 +424,6 @@ a.project_url {
   padding-left: 25px;
 }
 
-div.project_showcase p.project_url, div.side_project_showcase p.project_url {
-  font-size: 20px;
-  text-align: center;
-}
-
-div.project_showcase p.summary, div.side_project_showcase p.summary {
-  text-align: justify;
-  text-indent: 30px;
-}
-
 div.project_showcase, div.side_project_showcase {
   margin: 1em;
   display: inline-block;
@@ -529,16 +519,6 @@ div.contactInfo .email {
 div.contactInfo:hover .email {
   max-height: 100%;
   transition: max-height 0.25s ease-in;
-}
-
-div.project_showcase p.project_url, div.side_project_showcase p.project_url {
-  font-size: 20px;
-  text-align: center;
-}
-
-div.project_showcase p.summary, div.side_project_showcase p.summary {
-  text-align: justify;
-  text-indent: 30px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
