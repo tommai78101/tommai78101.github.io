@@ -7,8 +7,8 @@ layout: default
 
 <div class="portfolio_main">
 	{% assign sorted = site.posts | sort: date:"%B %m %Y" %}
+	<h3>Projects <span class="smaller_text">(Sorted by date of creation, hover over image to see demo, click image for more info)</span></h3>
 	<div class="project_only">
-		<h3>Projects <span class="smaller_text">(Sorted by date of creation, hover over image to see demo, click image for more info)</span></h3>
 		{% for project in sorted %}
 			{% if project.tag contains "project" %}
 				<div class="project_showcase">
@@ -20,8 +20,8 @@ layout: default
 		{% endfor %}
 	</div>
 	<hr class="separator">
+	<h3>Side Projects <span class="smaller_text">(Sorted by date of creation, click image for more info)</span></h3>
 	<div class="side_only">
-		<h3>Side Projects <span class="smaller_text">(Sorted by date of creation, click image for more info)</span></h3>
 		{% for side in sorted %}
 			{% if side.tag contains "side" %}
 				<div class="side_project_showcase">
@@ -33,8 +33,8 @@ layout: default
 		{% endfor %}
 	</div>
 	<hr class="separator">
+	<h3>Tech Demo <span class="smaller_text">(Sorted by semester, descending)</span></h3>
 	<div class="tech_demo">
-		<h3>Tech Demo <span class="smaller_text">(Sorted by semester, descending)</span></h3>
 		{% for demo in sorted %}
 			{% if demo.tag contains "demo" %}
 				<div class="tech_demo_showcase">
@@ -45,8 +45,8 @@ layout: default
 		{% endfor %}
 	</div>
 	<hr class="separator">
+	<h3>Documents <span class="smaller_text">(Sorted by semester, descending)</span></h3>
 	<div class="documents">
-		<h3>Documents <span class="smaller_text">(Sorted by semester, descending)</span></h3>
 		{% for docs in sorted %}
 			{% if docs.tag contains "docs" %}
 				<div class="documents_showcase">
