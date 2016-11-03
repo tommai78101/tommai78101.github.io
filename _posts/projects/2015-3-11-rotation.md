@@ -8,4 +8,5 @@ projectUrl: https://github.com/tommai78101/Rotation-Dragonfly
 isCurrentProject: false
 dateOfCreation: 2015/1/30
 jsid: project011
+summary: A 2D textile game for Linux systems, using PdCurses as a platform, and the game engine, Dragonfly. The goal is to escape the room by rotating the room clockwise or counterclockwise, and gravity to move yourself to the exit. Game and Game Engine is written in C++ from scratch.
 ---

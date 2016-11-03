@@ -8,5 +8,5 @@ projectUrl: https://github.com/tommai78101/GetDebt
 isCurrentProject: false
 dateOfCreation: 2015/3/21
 jsid: project012
-summary: A 3D hide-and-seek game where you are tasked to capture students running away from you as the debt collector before the time runs out. Uses Unreal Engine 4, written in C++.
+summary: A 3D hide-and-seek game where you are tasked to capture students running away from you as the debt collector before the time runs out. Features A.I. pathfinding, 3D model animations and assets, advanced camera, and collisions. Uses Unreal Engine 4, written in C++.
 ---
