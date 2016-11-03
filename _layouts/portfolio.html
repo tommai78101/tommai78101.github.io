@@ -12,11 +12,11 @@ layout: default
 		{% for project in sorted %}
 			{% if project.tag contains "project" %}
 				<div class="project_showcase">
-					{% if project.isCurrentProject %}
-						<p><span style="font-weight: bold; color: #FF9000; margin-top: 5px; margin-bottom: 5px;">(Under Construction)</span></p>
-					{% endif %}
 					<p><a href="{{ project.projectUrl }}"><img style="border: 2px solid;border-color: #000" id="{{ project.jsid }}" src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
 					<p><a class="project_url" href="{{ project.projectUrl }}">{{ project.title }} ({{ project.dateOfCreation }})</a></p>
+					{% if project.isCurrentProject %}
+						<p><span style="font-weight: bold; color: #FF9000; margin-top: 15px; margin-bottom: 15px;">(Under Construction)</span></p>
+					{% endif %}
 					<p class="summary">{{ project.summary }}</p>
 				</div>
 			{% endif %}
