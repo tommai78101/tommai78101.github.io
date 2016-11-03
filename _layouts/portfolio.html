@@ -12,7 +12,7 @@ layout: default
 		{% for project in sorted %}
 			{% if project.tag contains "project" %}
 				<div class="project_showcase">
-					<p><a href="{{ project.projectUrl }}"><img id="{{ project.jsid }}" src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
+					<p><a href="{{ project.projectUrl }}"><img style="border: 2px solid;border-color: #000" id="{{ project.jsid }}" src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
 					<p><a class="project_url" href="{{ project.projectUrl }}">{{ project.title }} ({{ project.dateOfCreation }})</a></p>
 					<p class="summary">{{ project.summary }}</p>
 				</div>
