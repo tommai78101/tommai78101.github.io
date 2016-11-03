@@ -40,6 +40,7 @@ layout: default
 				<div class="tech_demo_showcase">
 					<embed width="480" height="360" src="https://www.youtube.com/v/{{ demo.youtubeURL }}" style="margin-bottom: 4px;" allowfullscreen>
 					<p style="margin-top: -10px;"><a class="project_url" href="https://www.youtube.com/v/{{ demo.youtubeURL }}">{{ demo.title }}</a></p>
+					<p class="summary">{{ demo.summary }}</p>
 				</div>
 			{% endif %}
 		{% endfor %}
