@@ -15,6 +15,9 @@ layout: default
 					<p><a href="{{ project.projectUrl }}"><img style="border: 2px solid;border-color: #000" id="{{ project.jsid }}" src="{{ site.baseurl }}/assets/{{ project.showcaseImage }}"></a></p>
 					<p><a class="project_url" href="{{ project.projectUrl }}">{{ project.title }} ({{ project.dateOfCreation }})</a></p>
 					<p class="summary">{{ project.summary }}</p>
+					{% if project.isCurrentProject %}
+						<p><span style="font-weight: bold;color: #FF9000">(Under Construction)</span></p>
+					{% endif %}
 				</div>
 			{% endif %}
 		{% endfor %}
