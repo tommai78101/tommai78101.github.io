@@ -15,4 +15,3 @@ permalink: /about/
     Other skillsets that may come in handy: <span style="font-weight: bold;">HTML, CSS, JavaScript, System Administration, Windows development, OpenGL</span>.
 </p>
 
-
