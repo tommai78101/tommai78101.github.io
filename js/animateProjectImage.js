@@ -85,4 +85,16 @@ $(document).ready(function(){
          $(this).attr("src", "../assets/proj_multiplier.png");
       }
    );
+   //IRC Bot
+   $("#project014").hover(
+      //This function is mouseOver. GIF goes here.
+      //Note that due to the nature of the project, there is no GIF available.
+      function(){
+         $(this).attr("src", "../assets/proj_ircbot.gif");
+      },
+      //This function is mouseOut. Static image goes here.
+      function(){
+         $(this).attr("src", "../assets/proj_ircbot.png");
+      }
+   );
 });
