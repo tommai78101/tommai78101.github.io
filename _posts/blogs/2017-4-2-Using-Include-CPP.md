@@ -22,7 +22,7 @@ Let ```foo.cpp``` be our main source file that will contain our ```main()``` fun
 
 Typically, we would have the following in our Solution Explorer:
 
-<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_1.PNG" style="height:50%" />
+<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_1.PNG" style="height:50%; text-align:center;" />
 
 And our code would look something like this (as an example):
 
@@ -36,7 +36,7 @@ Hold CTRL or SHIFT, and selecting the files you wished to exclude. Then we right
 
 Set the **Exclude from Build** to **Yes**, and click **OK**, that's all for the compiler. You should see the following afterwards:
 
-<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_3.PNG" style="height:50%" />
+<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_3.PNG" style="height:50%;text-align:center;" />
 
 We can now go ahead and modify our code, so it looks like the following:
 
