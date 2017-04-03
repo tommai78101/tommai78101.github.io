@@ -18,25 +18,27 @@ So, how do you do this? It's simple.
 
 We start off with a practice project. First, let's create 3 files, 2 source files and 1 header file. I'll be naming them as ```foo.cpp```, ```bar.cpp```, and ```bar.h```, but you can name it whatever you want.
 
-<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_1.PNG" style="height:50%" />
-
 Let ```foo.cpp``` be our main source file that will contain our ```main()``` function. Let ```bar.h``` and ```bar.cpp``` both be supplementary codes that will contain codes such as classes, types, structs, and so on, as long as it's not the main entry point in our code.
 
-Typically, we would have the following:
+Typically, we would have the following in our Solution Explorer:
 
-<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_2.PNG" style="width:100% !important;max-width:100% !important;max-height: 100% !important" />
+<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_1.PNG" style="height:50%" />
+
+And our code would look something like this (as an example):
+
+<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_5.PNG" style="width:100% !important;max-width:100% !important;max-height: 100% !important" />
 
 Let's change that by using ```#include "bar.cpp"```. The first thing we need to do is to exclude the code files from the build. This means marking certain files from not being included in a list of files for the Visual C++ compiler to compile. 
 
 Hold CTRL or SHIFT, and selecting the files you wished to exclude. Then we right click on the multiple files, click on Properties in the context menu at the very bottom, and you should see the following dialog:
 
+<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_2.PNG" style="width:100% !important;max-width:100% !important;max-height: 100% !important" />
+
+Set the **Exclude from Build** to **Yes**, and click **OK**, that's all for the compiler. You should see the following afterwards:
+
 <img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_3.PNG" style="height:50%" />
 
-Set the **Exclude from Build** to **Yes**, and click **OK**, that's all for the compiler. You should see the following:
-
-<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_5.PNG" style="width:100% !important;max-width:100% !important;max-height: 100% !important" />
-
-Now, we can go ahead and modify our code, so it looks like the following:
+We can now go ahead and modify our code, so it looks like the following:
 
 <img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_4.PNG" style="width:100% !important;max-width:100% !important;max-height: 100% !important" />
 
