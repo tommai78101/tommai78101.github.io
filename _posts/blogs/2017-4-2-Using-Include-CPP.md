@@ -24,7 +24,7 @@ Let ```foo.cpp``` be our main source file that will contain our ```main()``` fun
 
 Typically, we would have the following:
 
-<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_2.PNG" style="width:100%" />
+<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_2.PNG" style="width:100% !important;max-width:100% !important;max-height: 100% !important" />
 
 Let's change that by using ```#include "bar.cpp"```. The first thing we need to do is to exclude the code files from the build. This means marking certain files from not being included in a list of files for the Visual C++ compiler to compile. 
 
