@@ -34,11 +34,11 @@ Hold CTRL or SHIFT, and selecting the files you wished to exclude. Then we right
 
 Set the **Exclude from Build** to **Yes**, and click **OK**, that's all for the compiler. You should see the following:
 
-<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_5.PNG" style="width:100% !important" />
+<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_5.PNG" style="width:100% !important;max-width:100% !important;max-height: 100% !important" />
 
 Now, we can go ahead and modify our code, so it looks like the following:
 
-<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_4.PNG" style="width:100% !important" />
+<img src="https://raw.githubusercontent.com/tommai78101/tommai78101.github.io/master/images/visual_studio/solution_4.PNG" style="width:100% !important;max-width:100% !important;max-height: 100% !important" />
 
 Compiling our code should be successful. That's how we can use ```#include``` to include our C or CPP files when compiling our codes.
 
