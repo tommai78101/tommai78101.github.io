@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using \#include "CPP" file in Visual Studio
+title: Using #include "CPP" file in Visual Studio
 ---
 
 You should be seeing tons of C or C++ codes where you see ```#include "foo.h"``` at the top. You look at these ```#include``` preprocessor directives, and you probably never asked yourself, why couldn't you use ```#include "foo.c"``` or ```#include "bar.cpp"```?
