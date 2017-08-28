@@ -17,13 +17,13 @@ One might say this is easy to do, but when you think about the following context
 
 It all began with a favorite game of mine during my childhood, MegaMan Battle Network, as shown:
 
-<span class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/title_screen.png)</span>
+<p class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/title_screen.png)</p>
 
 Walking around in the game world, I noticed a peculiar thing about the way the main character moves around in the game. When pressing UP, I was able to move "diagonally" in the world, and when pressing UP + RIGHT, I was able to move "up" in the world. As far as I can tell, the game doesn't distinguish which way is the true up. But nonetheless, the game is playable.
 
 Then I came across another instance of the game, which uses isometric movement is Pokemon Ranger.
 
-<span class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/pokemon_ranger.png)</span>
+<p class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/pokemon_ranger.png)</p>
 
 Now granted, somewhere along those lines, and all those games that I have played, there was a moment where I was found the Settings menu, in which you can choose where the Up direction should be. The game would allow me to choose whether Northwest, North, or Northeast, should be my primary Up direction. I may have forgotten which game it is, but that was the spark of this motivation for me to understand how the isometric movements work, and in such a way that it can be interchangeable across multiple orientations.
 
@@ -31,9 +31,9 @@ Now granted, somewhere along those lines, and all those games that I have played
 
 Below shows the two common orientations for isometric movements. The first one shows the Up direction oriented towards the Northeast direction, and the other one shows the Up direction oriented towards the Northwest direction.
 
-<span class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/isometric_grid.png)</span>
+<p class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/isometric_grid.png)</p>
 
-<span class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/isometric_grid_2.png)</span>
+<p class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/isometric_grid_2.png)</p>
 
 We will first look at the first picture and create the isometric coordinates here for moving around, and then look to see how we can apply the same isometric calculations to the second picture. We will be using the most common isometric aspect ratio, where the width is longer than the height.
 
@@ -58,7 +58,7 @@ When a unit moves in 1 direction on the Cartesian grid, that unit would move bot
 
 Imagine a rhombus (diamond shape laid flat horizontally). When compared to a square grid, we can see that by using the ratio given above, the diagonals of an isometric grid cross the half of the Cartesian square grid. This can easily be seen if we imagine the rhombus overlaid on top of the square.
 
-<span class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/iso_car_comparison.png)</span>
+<p class="center">![](https://github.com/tommai78101/tommai78101.github.io/raw/master/images/isometric/iso_car_comparison.png)</p>
 
 Therefore, we can see that if we move by +1 on the X axis, it is as follows:
 
@@ -77,10 +77,30 @@ Therefore, we do the following calculations:
 
 First () belongs to the X axis. Second () belongs to the Y axis. (newX, newY) is the target isometric coordinates. The coordinates are based on the isometric rhombus movement of 2:1, __***NOT***__ the original Cartesian grid movement.
 
-|Target Coordinates|Cartesian X Axis|+|Cartesian Y Axis|
-|:---:|:---:|:---:|:---:|
-|newX|x|+|(-y)|
-|newY|x/2|+|y/2|
+<table style="border: 1px solid #000000; width: 100%;">
+    <thead style="font-weight: 600;">
+        <tr>
+            <td>Target Coordinates</td>
+            <td>Cartesian X Axis</td>
+            <td style="width:50px">+</td>
+            <td>Cartesian Y Axis</td>
+        </tr>
+    </thead>
+    <tbody style="text-align: center;">
+        <tr>
+            <td>newX</td>
+            <td>x</td>
+            <td>+</td>
+            <td>(-y)</td>
+        </tr>
+        <tr>
+            <td>newY</td>
+            <td>x/2</td>
+            <td>+</td>
+            <td>y/2</td>
+        </tr>
+    </tbody>
+</table>
 
 Of which, newY can be simplified as (x+y)/2.
 
