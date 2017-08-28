@@ -167,7 +167,7 @@ We now have the ability to convert one isometric orientation to the other orient
         float newX, newY;
         switch (flipUp){
             case 0:
-                newX = (x + y);
+                newX = (x - y);
                 newY = (x + y) / 2.0f;
                 break;
             case 1:
@@ -176,7 +176,7 @@ We now have the ability to convert one isometric orientation to the other orient
                 newY = y;
                 break;
             case 2:
-                newX = (x - y);
+                newX = (x + y);
                 newY = (-x + y) / 2.0f;
                 break;
         }
