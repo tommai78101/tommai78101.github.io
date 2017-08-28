@@ -81,6 +81,7 @@ First () belongs to the X axis. Second () belongs to the Y axis. (newX, newY) is
     <thead style="font-weight: 600; text-align: center;">
         <tr>
             <td>Target Coordinates</td>
+            <td style="width: 50px;">=</td>
             <td>Cartesian X Axis</td>
             <td style="width:50px">+</td>
             <td>Cartesian Y Axis</td>
@@ -89,12 +90,14 @@ First () belongs to the X axis. Second () belongs to the Y axis. (newX, newY) is
     <tbody style="text-align: center;">
         <tr>
             <td>newX</td>
+            <td>=</td>
             <td>x</td>
             <td>+</td>
             <td>(-y)</td>
         </tr>
         <tr>
             <td>newY</td>
+            <td>=</td>
             <td>x/2</td>
             <td>+</td>
             <td>y/2</td>
@@ -126,6 +129,7 @@ Again, using the isometric 2:1 rhombus as our reference coordinates, not the ori
     <thead style="font-weight: 600; text-align: center;">
         <tr>
             <td>Target Coordinates</td>
+            <td style="width: 50px;">=</td>
             <td>Cartesian X Axis</td>
             <td style="width:50px">+</td>
             <td>Cartesian Y Axis</td>
@@ -134,12 +138,14 @@ Again, using the isometric 2:1 rhombus as our reference coordinates, not the ori
     <tbody style="text-align: center;">
         <tr>
             <td>newX</td>
+            <td>=</td>
             <td>x</td>
             <td>+</td>
             <td>y</td>
         </tr>
         <tr>
             <td>newY</td>
+            <td>=</td>
             <td>(-x)/2</td>
             <td>+</td>
             <td>y/2</td>
