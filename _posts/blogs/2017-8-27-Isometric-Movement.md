@@ -108,3 +108,31 @@ Again, using the isometric 2:1 rhombus as our reference coordinates, not the ori
 |newY|(-x)/2|+|y/2|
 
 Of which, newY can be simplified into (-x+y)/2.
+
+### Conclusion
+
+We now have the ability to convert one isometric orientation to the other orientation. With a simple `switch...case` statement, we can choose whether to use the Isometric Movement 1, Isometric Movement 2, or Cartesian Movement by using the following code:
+
+`flipUp` is an enumeration variable. Vector2D is a struct containing the X and Y values.
+
+    Vector2D CartesianToIsometric(Vector2D position, int flipUp){
+        float x = position.x;
+        float y = position.y;
+        float newX, newY;
+        switch (flipUp){
+            case 0:
+                newX = (x + y);
+                newY = (x + y) / 2.0f;
+                break;
+            case 1:
+            default:
+                newX = x;
+                newY = y;
+                break;
+            case 2:
+                newX = (x - y);
+                newY = (-x + y) / 2.0f;
+                break;
+        }
+        return Vector2D(newX, newY);    
+    }
