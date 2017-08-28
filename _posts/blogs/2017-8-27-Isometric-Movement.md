@@ -77,8 +77,8 @@ Therefore, we do the following calculations:
 
 First () belongs to the X axis. Second () belongs to the Y axis. (newX, newY) is the target isometric coordinates. The coordinates are based on the isometric rhombus movement of 2:1, __***NOT***__ the original Cartesian grid movement.
 
-<table style="border: 1px solid #000000; width: 100%;">
-    <thead style="font-weight: 600;">
+<table border="1" style="width: 100%;">
+    <thead style="font-weight: 600; text-align: center;">
         <tr>
             <td>Target Coordinates</td>
             <td>Cartesian X Axis</td>
@@ -122,10 +122,30 @@ Same with moving downwards, we need to move in the southeast direction. Thus:
     
 Again, using the isometric 2:1 rhombus as our reference coordinates, not the original Cartesian square grid coordinates. Therefore, we get:
 
-|Target Coordinates|Cartesian X Axis|+|Cartesian Y Axis|
-|:---:|:---:|:---:|:---:|
-|newX|x|+|y)|
-|newY|(-x)/2|+|y/2|
+<table border="1" style="width: 100%;">
+    <thead style="font-weight: 600; text-align: center;">
+        <tr>
+            <td>Target Coordinates</td>
+            <td>Cartesian X Axis</td>
+            <td style="width:50px">+</td>
+            <td>Cartesian Y Axis</td>
+        </tr>
+    </thead>
+    <tbody style="text-align: center;">
+        <tr>
+            <td>newX</td>
+            <td>x</td>
+            <td>+</td>
+            <td>y</td>
+        </tr>
+        <tr>
+            <td>newY</td>
+            <td>(-x)/2</td>
+            <td>+</td>
+            <td>y/2</td>
+        </tr>
+    </tbody>
+</table>
 
 Of which, newY can be simplified into (-x+y)/2.
 
