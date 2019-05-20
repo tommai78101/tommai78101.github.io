@@ -99,7 +99,7 @@ Short TL;DR list, starting from a completely blank slate (<span style="font-weig
 	<li>
 		<div>
 			<span>Edit the <code class="file">launch.json</code> with the following, while remembering to rename the "name", "mainClass" and "projectName" each to something else:</span>
-
+```
     {
         "configurations": [
             {
@@ -112,12 +112,14 @@ Short TL;DR list, starting from a completely blank slate (<span style="font-weig
             }
         ]
     }
+```
 </div>
 	</li>
 	<li>
 		<div>
 			<span>Create a simple Java "Hello World" application, while also renaming the class name to whatever you entered in <code class="file">launch.json</code>:</span>
 			
+```			
     package my.package.names;
     
     public class App {
@@ -125,6 +127,7 @@ Short TL;DR list, starting from a completely blank slate (<span style="font-weig
             System.out.println("Hello world.");
         }
     }
+```
 </div>
 	</li>
 	<li>Make sure to fix to JUnit 4.12 test cases, and fix all remaining Java problems/warnings.</li>
