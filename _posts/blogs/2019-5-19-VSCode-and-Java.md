@@ -42,6 +42,8 @@ title: Setup - Visual Studio Code and Java
 	pre.code {
 		background-color: #efefef;
 		margin: 15px auto;
+		font-family: monospace;
+		letter-spacing: -1px;
 	}
 </style>
 
