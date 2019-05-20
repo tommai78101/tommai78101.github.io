@@ -27,7 +27,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1090px;
   padding: 0 10px;
   width: 100%;
 }
@@ -463,6 +463,9 @@ div.project_only, div.side_only {
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 
 div.tech_demo_showcase {
