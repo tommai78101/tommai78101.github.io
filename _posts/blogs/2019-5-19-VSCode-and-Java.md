@@ -16,6 +16,8 @@ title: Setup - Visual Studio Code and Java
 		border-radius: 4px; 
 		padding: 1px 3px 1px 3px;
 		font-size: 11px;
+		position: relative;
+		top: -2px;
 	}
 
 	code.constant {
