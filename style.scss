@@ -27,7 +27,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1024px;
   padding: 0 10px;
   width: 100%;
 }
@@ -361,6 +361,7 @@ article {
   // background-color: #c8f0fe;
   border-right: solid 2px #CECECE;
   font-size: 12px;
+  padding: 0 15px 0 0;
 }
 
 .sidebar a {
