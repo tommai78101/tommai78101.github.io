@@ -32,7 +32,7 @@ title: Setup - Visual Studio Code and Java
 	}
 
 	code.file {
-		color: #bb5;
+		color: #99ad00;
 	}
 
 	code.command {
