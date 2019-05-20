@@ -4,6 +4,9 @@ title: Setup - Visual Studio Code and Java
 ---
 
 <style type="text/css">
+	body {
+		background: #fff;
+	}
 	a.myLinks {
 		text-decoration: underline;
 		color: #59b;
@@ -21,19 +24,19 @@ title: Setup - Visual Studio Code and Java
 	}
 
 	code.constant {
-		color: #77b;
+		color: #55b;
 	}
 
 	code.directory {
-		color: #b77;
+		color: #b55;
 	}
 
 	code.file {
-		color: #bb7;
+		color: #bb5;
 	}
 
 	code.command {
-		color: #7b7;
+		color: #5b5;
 	}
 </style>
 
