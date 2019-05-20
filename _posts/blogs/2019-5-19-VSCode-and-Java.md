@@ -38,6 +38,11 @@ title: Setup - Visual Studio Code and Java
 	code.command {
 		color: #5b5;
 	}
+
+	pre.code {
+		background-color: #efefef;
+		margin: 15px auto;
+	}
 </style>
 
 I finally had the motivation to continue my blogging activity, and I also felt like making some Java code to spend my times along. After all, it's been close to 4 years since I touched Java. I wondered what Java is like right now, and I have found a favorite text editor that I wanted to try Java out in: Visual Studio Code!
@@ -99,7 +104,7 @@ Short TL;DR list, starting from a completely blank slate (<span style="font-weig
 	<li>
 		<div>
 			<span>Edit the <code class="file">launch.json</code> with the following, while remembering to rename the "name", "mainClass" and "projectName" each to something else:</span>
-<pre>
+<pre class="code">
 
     {
         "configurations": [
@@ -119,7 +124,7 @@ Short TL;DR list, starting from a completely blank slate (<span style="font-weig
 	<li>
 		<div>
 			<span>Create a simple Java "Hello World" application, while also renaming the class name to whatever you entered in <code class="file">launch.json</code>:</span>
-<pre>
+<pre class="code">
 
     package my.package.names;
     
